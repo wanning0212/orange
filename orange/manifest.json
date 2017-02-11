@@ -1,6 +1,6 @@
 {
     "@platforms": ["android", "iPhone", "iPad"],
-    "id": "",/*应用的标识，创建应用时自动生成，勿手动修改*/
+    "id": "H501AD7D6",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "orange",/*应用名称，程序桌面图标名称*/
     "version": {
         "name": "1.0",/*应用版本名称*/
@@ -109,7 +109,7 @@
             "waiting": true/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
         },
         "popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
-        "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+        "runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
         "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
         "distribute": {
             "apple": {
@@ -197,7 +197,7 @@
                     "xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
                     "xxhdpi": ""/*1080P高分屏启动图片，分辨率：1080x1882*/
                 }
-            }
+            },"debug":true
         }
     },
 	"dependencies": {
@@ -354,5 +354,5 @@
 				"images/caiwu/xia.png"
 			]
 		}
-	}
+	},"fullscreen":false
 }

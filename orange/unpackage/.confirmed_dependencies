@@ -1,29 +1,29 @@
 {
-	"index.html": {
-		"resources": [
-			"images/home/f1.png",
-			"css/home/home.css",
-			"images/home/jia.png",
-			"images/home/f4.png",
-			"js/zepto.min.js",
-			"images/home/f2.png",
-			"js/auto.js",
-			"css/reset.css",
-			"images/home/f3.png",
-			"images/home/lef.png",
-			"images/home/head.png",
-			"images/home/rig.png",
-			"images/home/qiany.png",
-			"images/home/cgx.png",
-			"images/home/fs.png",
-			"images/home/pl.png",
-			"images/home/shangping.png",
-			"images/home/kc.png",
-			"images/home/cw.png",
-			"images/home/dui.png",
-			"css/info.css",
-			"images/inform/car.png",
-			"images/home/jiaoyi.png"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "images/home/f1.png",
+      "css/home/home.css",
+      "images/home/jia.png",
+      "images/home/f4.png",
+      "js/zepto.min.js",
+      "images/home/f2.png",
+      "js/auto.js",
+      "css/reset.css",
+      "images/home/f3.png",
+      "images/home/lef.png",
+      "images/home/head.png",
+      "images/home/rig.png",
+      "images/home/qiany.png",
+      "images/home/cgx.png",
+      "images/home/fs.png",
+      "images/home/pl.png",
+      "images/home/shangping.png",
+      "images/home/kc.png",
+      "images/home/cw.png",
+      "images/home/dui.png",
+      "css/info.css",
+      "images/inform/car.png",
+      "images/home/jiaoyi.png"
+    ]
+  }
 }
