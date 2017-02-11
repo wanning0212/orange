@@ -1,0 +1,108 @@
+@import url(../reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+body {
+  background: #f2f2f2;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #bfbfbf;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 1rem;
+}
+.warp header .left {
+  display: inline-block;
+  width: 1rem;
+  height: 3.6rem;
+  background: 0;
+  line-height: 3.6rem;
+}
+.warp header .left img {
+  width: 1rem;
+  height: auto;
+  background: 0;
+  vertical-align: middle;
+}
+.warp header h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 3.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.warp header .right {
+  display: inline-block;
+  width: 1.8rem;
+  height: 3.6rem;
+  background: 0;
+  line-height: 3.6rem;
+}
+.warp header .right img {
+  width: 1.8rem;
+  height: auto;
+  background: 0;
+  vertical-align: middle;
+}
+.warp section {
+  -webkit-box-flex: 1;
+  margin-top: 0.7rem;
+}
+.warp section .main {
+  width: 100%;
+  height: 3.2rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 1rem;
+  border-bottom: 1px solid #bfbfbf;
+}
+.warp section .main .sec_left {
+  width: 2rem;
+  height: 3.2rem;
+  background: 0;
+  line-height: 3.1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+.warp section .main .sec_left img {
+  width: 2.1rem;
+  height: auto;
+  background: 0;
+  vertical-align: middle;
+}
+.warp section .main h3 {
+  -webkit-box-flex: 1;
+  line-height: 3.2rem;
+}
+.warp section .main .sec_right {
+  width: 1rem;
+  height: 3.2rem;
+  background: 0;
+  line-height: 3.2rem;
+}
+.warp section .main .sec_right img {
+  width: 1rem;
+  height: 1.2rem;
+  background: 0;
+  vertical-align: middle;
+}
+.warp section .main:nth-child(3) {
+  margin-top: 0.7rem;
+  border-top: 1px solid #bfbfbf;
+}
+.warp section .main:nth-child(8) {
+  margin-top: 0.7rem;
+  border-top: 1px solid #bfbfbf;
+}

@@ -1,0 +1,80 @@
+@import url(../reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: 0;
+  background: rgba(255, 255, 255, 0.85);
+}
+body {
+  background: url("../../images/login/bg.png") no-repeat center top;
+  background-size: 100% 100%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp .logo {
+  width: 9rem;
+  height: 20.3rem;
+  background: 0;
+  padding-top: 5.8rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.warp .logo img {
+  width: 8.5rem;
+  height: auto;
+  background: 0;
+}
+.warp .logo p {
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.6rem;
+}
+.warp .form {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 1.7rem 3rem 0;
+  box-sizing: border-box;
+}
+.warp .form span {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background: 0;
+  border: 1px solid #fd8932;
+  border-radius: 50%;
+  line-height: 2.8rem;
+  margin-right: 1.2rem;
+  box-sizing: border-box;
+}
+.warp .form span img {
+  width: 1.2rem;
+  height: auto;
+  background: 0;
+  vertical-align: middle;
+  margin-left: 0.8rem;
+}
+.warp .form .input {
+  -webkit-box-flex: 1;
+  border-bottom: 2px solid #ff7d1b;
+}
+.warp .form .input #txt {
+  border: none;
+  background: 0;
+  height: 2.6rem;
+  font-size: 1.4rem;
+}
+.warp .form .input .eyes {
+  display: inline-block;
+  width: 2rem;
+  height: 1.6rem;
+  background: 0;
+  background: url(../../images/login/eyes.png) no-repeat right center;
+  background-size: 2rem auto ;
+  position: relative;
+  top: 0;
+  left: 0;
+}

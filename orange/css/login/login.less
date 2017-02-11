@@ -1,0 +1,76 @@
+@import url(../reset.css);
+.whb(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir; //horizontal
+}
+html,
+body,
+.warp {
+    .whb(100%,100%,0);
+    background: rgba(255,255,255,0.85);
+}
+body {
+    background: url("../../images/login/bg.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+.warp {
+    .box;
+    .logo {
+        .whb(9rem,20.3rem,0);
+        padding-top: 5.8rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+        img {
+            .whb(8.5rem,auto,0);
+        }
+        p {
+            text-align: center;
+            line-height: 4rem;
+            font-size: 1.6rem;
+        }
+    }
+    .form {
+        .box(horizontal);
+        padding: 1.7rem 3rem 0;
+        box-sizing: border-box;
+        span {
+            display: inline-block;
+            .whb(3rem,3rem,0);
+            border: 1px solid #fd8932;
+            border-radius: 50%;
+            line-height: 2.8rem;
+            margin-right: 1.2rem;
+            box-sizing: border-box;
+            img {
+                .whb(1.2rem,auto,0);
+                vertical-align: middle;
+                margin-left: 0.8rem;
+            }
+        }
+        .input {
+            -webkit-box-flex: 1;
+            border-bottom: 2px solid #ff7d1b;
+            #txt {
+                border: none;
+                background: 0;
+                height: 2.6rem;
+                font-size: 1.4rem;
+            }
+            .eyes {
+                display: inline-block;
+                .whb(2rem,1.6rem,0);
+                background: url(../../images/login/eyes.png) no-repeat right center;
+                background-size: 2rem auto ;
+                position: relative;
+                top:0;
+                left:0;
+            }
+        }
+        
+    }
+}

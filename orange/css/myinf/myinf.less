@@ -1,0 +1,92 @@
+@import url(../reset.css);
+.whb(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir; //horizontal
+}
+html,
+body,
+.warp {
+    .whb(100%,100%,0);
+}
+body {
+    background: #f2f2f2;
+}
+.warp {
+    .box;
+    header {
+        .whb(100%,3.6rem,#f7f7f7);
+        border-bottom: 1px solid #bfbfbf;
+        .box(horizontal);
+        padding: 0 1rem;
+        .left {
+            display: inline-block;
+            .whb(1rem,3.6rem,0);
+            line-height: 3.6rem;
+            img {
+                .whb(1rem,auto,0);
+                vertical-align: middle;
+            }
+        }
+        h2 {
+            -webkit-box-flex: 1;
+            text-align: center;
+            line-height: 3.6rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        .right {
+            display: inline-block;
+            .whb(1.8rem,3.6rem,0);
+            line-height: 3.6rem;
+            img {
+                .whb(1.8rem,auto,0);
+                vertical-align: middle;
+            }
+        }
+    }
+    section {
+        -webkit-box-flex: 1;
+        margin-top: 0.7rem;
+        .main {
+            .whb(100%,3.2rem,#fff);
+            .box(horizontal);
+            padding: 0 1rem;
+            border-bottom: 1px solid #bfbfbf;
+            .sec_left {
+                .whb(2rem,3.2rem,0);
+                line-height: 3.1rem;
+                padding-right: 1rem;
+                box-sizing: border-box;
+                img {
+                    .whb(2.1rem,auto,0);
+                    vertical-align: middle;
+                }
+            }
+            h3 {
+                -webkit-box-flex: 1;
+                line-height: 3.2rem;
+            }
+            .sec_right {
+                .whb(1rem,3.2rem,0);
+                line-height: 3.2rem;
+                img {
+                    .whb(1rem,1.2rem,0);
+                    vertical-align: middle;
+                }
+            }
+            &:nth-child(3) {
+                margin-top: 0.7rem;
+                border-top: 1px solid #bfbfbf;
+            }
+            &:nth-child(8) {
+                margin-top: 0.7rem;
+                border-top: 1px solid #bfbfbf;
+            }
+        }
+    }
+}
