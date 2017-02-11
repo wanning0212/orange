@@ -32,7 +32,7 @@
 								<li>店铺状态：<span>停业</span></li>
 							</ul>
 							<div class="right">
-								<a href="#"><img src="images/home/rig.png" /></a>
+								<a ui-sref="login" href=""><img src="images/home/rig.png" /></a>
 							</div>
 						</div>
 						<div class="main1">
@@ -80,7 +80,7 @@
 							</div>
 							<div class="bottom">
 								<div class="bottom1">
-									<a href="#">
+									<a ui-sref="fzb" href="#">
 										<dl>
 											<dt><img src="images/home/cw.png"/></dt>
 											<dd>
@@ -89,7 +89,7 @@
 									</a>
 								</div>
 								<div class="bottom1">
-									<a ui-sref="index.comment" href="">
+									<a ui-sref="comment" href="">
 										<dl>
 											<dt><img src="images/home/pl.png"/></dt>
 											<dd>
@@ -165,7 +165,7 @@
 					<dd>订单状态</dd>
 				</dl>
 				<dl>
-					<dt><img src="images/home/f4.png"/></dt>
+					<dt><a ui-sref="myinf" href=""><img src="images/home/f4.png"/></a></dt>
 					<dd>我的店铺</dd>
 				</dl>
 			</footer>
@@ -200,11 +200,35 @@
 					}
 				}
 			}).
-			state("index.comment",{
+			state("comment",{
 				views:{
 					"page":{
-						url:"/index.comment",
+						url:"/comment",
 						templateUrl:"comment.html"
+					}
+				}
+			}).
+			state("login",{
+				views:{
+					"page":{
+						url:"/login",
+						templateUrl:"login.html"
+					}
+				}
+			}).
+			state("myinf",{
+				views:{
+					"page":{
+						url:"/myinf",
+						templateUrl:"myinf.html"
+					}
+				}
+			}).
+			state("fzb",{
+				views:{
+					"page":{
+						url:"/fzb",
+						templateUrl:"fzb.html"
 					}
 				}
 			})
