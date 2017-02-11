@@ -1,0 +1,186 @@
+@import url(../reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+body {
+  background: #f2f2f2;
+}
+.two {
+  width: 100%;
+  height: 100%;
+  background: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.two header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.two header .head1 {
+  width: 2rem;
+  height: 3.6rem;
+  background: none;
+}
+.two header .head1 img {
+  width: 1rem;
+  height: 1.7rem;
+  background: none;
+}
+.two header .head2 {
+  -webkit-box-flex: 1;
+  font-size: 1.6rem;
+}
+.two header .head3 {
+  width: 2rem;
+  height: 3.6rem;
+  background: none;
+}
+.two header .head3 img {
+  width: 1.8rem;
+  height: 1.7rem;
+  background: none;
+}
+.two .null {
+  width: 100%;
+  height: 0.3rem;
+  background: #e3e3e3;
+}
+.two section {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+  font-size: 1.2rem;
+  color: #757575;
+}
+.two section .tada {
+  width: 100%;
+  height: 2rem;
+  background: none;
+  line-height: 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.two section .tada span {
+  color: #fe8332;
+}
+.two section .two_main {
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  color: #b4b4b4;
+  margin-bottom: 0.2rem;
+}
+.two section .two_main i {
+  float: right;
+}
+.two section .two_main i img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+.two section .two_main span {
+  color: #3d3d3d;
+}
+.two section .two_main_img {
+  width: 100%;
+  height: 11.8rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+}
+.two section .two_main_img p {
+  width: 100%;
+  height: 2.5rem;
+  background: none;
+  line-height: 2.5rem;
+  color: #3d3d3d;
+  font-size: 1.2rem;
+}
+.two section .two_main_img ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+.two section .two_main_img ul li {
+  -webkit-box-flex: 1;
+}
+.two section .two_main_img ul li img {
+  width: 6.5rem;
+  height: 6.5rem;
+  background: none;
+}
+.two section .addres {
+  width: 100%;
+  height: 4.5rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.two section .addres p {
+  line-height: 2.1rem;
+}
+.two section .addres p:first-child {
+  background: url("../../images/myind/preson.png") no-repeat left center;
+  background-size: auto 1.5rem;
+  padding-left: 2.4rem;
+}
+.two section .addres p:nth-child(2) {
+  background: url("../../images/myind/location.png") no-repeat left center;
+  background-size: auto 1.5rem;
+  padding-left: 2.4rem;
+}
+.two section .addres i {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+}
+.two section .addres i img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+}
+.two footer {
+  width: 100%;
+  height: 4.1rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  line-height: 4.1rem;
+  font-size: 1.2rem;
+  color: #3d3d3d;
+}
+.two footer .sub_cont {
+  -webkit-box-flex: 1;
+}
+.two footer .sub_cont span {
+  color: #fc8d3e;
+}
+.two footer .submit {
+  width: 8.6rem;
+  height: 4.1rem;
+  background: #ff7d1b;
+  text-align: center;
+  color: white;
+}

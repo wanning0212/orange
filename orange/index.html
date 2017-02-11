@@ -89,7 +89,7 @@
 									</a>
 								</div>
 								<div class="bottom1">
-									<a href="#">
+									<a ui-sref="index.comment" href="">
 										<dl>
 											<dt><img src="images/home/pl.png"/></dt>
 											<dd>
@@ -197,6 +197,14 @@
 					"page":{
 						url:"/info",
 						templateUrl:"info.html"
+					}
+				}
+			}).
+			state("index.comment",{
+				views:{
+					"page":{
+						url:"/index.comment",
+						templateUrl:"comment.html"
 					}
 				}
 			})
