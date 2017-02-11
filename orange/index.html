@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html>
-
+<html ng-app="myApp">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>优橙设计师移动工作平台</title>
 		<link rel="stylesheet" type="text/css" href="css/home/home.css" />
 		<script type="text/javascript" src="js/auto.js"></script>
-		<script type="text/javascript" src="js/zepto.min.js"></script>
-
+		<!--<script type="text/javascript" src="js/zepto.min.js"></script>-->
+		<script src="js/angular-1.4.6.js"></script>
+		<script src="js/angular-ui-router.js"></script>
 	</head>
-
-	<body>
+	<body ui-view="page">
 		<div class="warp">
-			<div class="content">
-				<div class="one">
+			<div class="content" ui-view="content">
 					<header>
 						<div class="left">
 							<a href="#"><img src="images/home/lef.png" /></a>
 						</div>
 						<h2>优橙设计师移动工作平台</h2>
 					</header>
-
 					<section>
 						<div class="info">
 							<div class="left">
@@ -70,7 +67,6 @@
 												<p>库存商品</p><span>115</span></dd>
 										</dl>
 									</a>
-
 								</div>
 								<div class="bottom1">
 									<a href="#">
@@ -80,7 +76,6 @@
 												<p>草稿箱</p><span>15</span></dd>
 										</dl>
 									</a>
-
 								</div>
 							</div>
 							<div class="bottom">
@@ -92,7 +87,6 @@
 												<p>财务管理</p><span>115</span></dd>
 										</dl>
 									</a>
-
 								</div>
 								<div class="bottom1">
 									<a href="#">
@@ -102,7 +96,6 @@
 												<p>评论管理</p><span>及时回复客户</span></dd>
 										</dl>
 									</a>
-
 								</div>
 							</div>
 						</div>
@@ -110,7 +103,7 @@
 							<div class="main2_top">
 								<div class="m2_left"><img src="images/home/dui.png" /></div>
 								<h3>消息箱<span>(39)</span></h3>
-								<div class="m2_right"><a href="info.html"><img src="images/home/rig.png" /></a></div>
+								<div class="m2_right"><a ui-sref="info" href=""><img src="images/home/rig.png" /></a></div>
 							</div>
 							<div class="info_content">
 								<h1 class="info_fl"><img src="images/inform/car.png" alt="" /></h1>
@@ -154,31 +147,14 @@
 							</div>
 						</div>
 					</section>
-				</div>
-				<div class="two">
-					<header>2</header>
-					<section></section>
-				</div>
-				<div class="three">
-					<header>3</header>
-					<section></section>
-				</div>
-				<div class="four">
-					<header>4</header>
-					<section></section>
-				</div>
-				<div class="five">
-					<header>5</header>
-					<section></section>
-				</div>
 			</div>
 			<footer>
 				<dl class="one">
-					<dt><img src="images/home/f1.png"/></dt>
+					<dt><a ui-sref="index" href=""><img src="images/home/f1.png"/></a></dt>
 					<dd>首页</dd>
 				</dl>
 				<dl>
-					<dt><a href="help.html"><img src="images/home/f2.png"/></a></dt>
+					<dt><a ui-sref="help" href=""><img src="images/home/f2.png"/></a></dt>
 					<dd>优橙协助</dd>
 				</dl>
 				<dl class="on">
@@ -195,12 +171,36 @@
 			</footer>
 		</div>
 	</body>
-	<script type="text/javascript">
-		$(function() {
-			$("footer").on("touchstart", "dl", function() {
-				$(".content").css("left", -$(this).index() * 100 + "%");
+	<script>
+		var app = angular.module("myApp",["ui.router"]);
+		app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
+			$stateProvider.
+
+			state("help",{
+				views:{
+				"page":{
+						url:"/help",
+						templateUrl:"help.html"
+					}
+				}
+			}).
+			state("index",{
+				views:{
+					"page":{
+						url:"/",
+						templateUrl:"index.html"
+					}
+				}
+			}).
+			state("info",{
+				views:{
+					"page":{
+						url:"/info",
+						templateUrl:"info.html"
+					}
+				}
 			})
-		})
+		}])
 	</script>
 
 </html>

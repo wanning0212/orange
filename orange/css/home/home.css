@@ -12,29 +12,13 @@ body {
 .warp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .warp .content {
   -webkit-box-flex: 1;
-  width: 100%;
-  height: auto;
-  background: 0;
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  position: relative;
-  left: 0;
-}
-.warp .content > div {
-  overflow: auto;
-  width: 100%;
-  height: auto;
-  background: 0;
-}
-.warp .content .one {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
-.warp .content .one header {
+.warp .content header {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   width: 100%;
@@ -43,32 +27,32 @@ body {
   padding: 0 1rem;
   border-bottom: 1px solid #bfbfbf;
 }
-.warp .content .one header .left {
+.warp .content header .left {
   width: 1.8rem;
   height: auto;
   background: 0;
   padding-top: 1rem;
   box-sizing: border-box;
 }
-.warp .content .one header .left img {
+.warp .content header .left img {
   width: 1.8rem;
   height: 1.8rem;
   background: 0;
 }
-.warp .content .one header h2 {
+.warp .content header h2 {
   -webkit-box-flex: 1;
   text-align: center;
   line-height: 3.6rem;
   font-size: 1.6rem;
 }
-.warp .content .one section {
+.warp .content section {
   -webkit-box-flex: 1;
   overflow: auto;
 }
-.warp .content .one section::-webkit-scrollbar {
+.warp .content section::-webkit-scrollbar {
   width: 0;
 }
-.warp .content .one section .info {
+.warp .content section .info {
   width: 100%;
   height: 8.4rem;
   background: #ffffff;
@@ -78,35 +62,35 @@ body {
   padding: 1.2rem 1.5rem 0;
   box-sizing: border-box;
 }
-.warp .content .one section .info .left {
+.warp .content section .info .left {
   width: 6rem;
   height: auto;
   background: 0;
 }
-.warp .content .one section .info .left dl {
+.warp .content section .info .left dl {
   width: 5rem;
 }
-.warp .content .one section .info .left dl img {
+.warp .content section .info .left dl img {
   width: 4.8rem;
   height: 4.8rem;
   background: 0;
   border-radius: 50%;
 }
-.warp .content .one section .info .left dl dd {
+.warp .content section .info .left dl dd {
   text-align: center;
   line-height: 1.6rem;
 }
-.warp .content .one section .info .center {
+.warp .content section .info .center {
   -webkit-box-flex: 1;
   margin-top: 0.6rem;
   border-left: 1px solid #cccccc;
   height: 4.1rem;
   font-size: 1.4rem;
 }
-.warp .content .one section .info .center li {
+.warp .content section .info .center li {
   padding-left: 1rem;
 }
-.warp .content .one section .info .center li:nth-child(1) img {
+.warp .content section .info .center li:nth-child(1) img {
   width: auto;
   height: 1.2rem;
   background: 0;
@@ -114,30 +98,30 @@ body {
   left: 0.6rem;
   top: 0.2rem;
 }
-.warp .content .one section .info .center li:nth-child(2) {
+.warp .content section .info .center li:nth-child(2) {
   padding-top: 1rem;
 }
-.warp .content .one section .info .center li:nth-child(2) span {
+.warp .content section .info .center li:nth-child(2) span {
   color: #ff4808;
 }
-.warp .content .one section .info .right {
+.warp .content section .info .right {
   width: 1rem;
   height: auto;
   background: 0;
   line-height: 7.2rem;
 }
-.warp .content .one section .info .right img {
+.warp .content section .info .right img {
   width: 1rem;
   height: 1.8rem;
   background: 0;
 }
-.warp .content .one section .main1 {
+.warp .content section .main1 {
   margin-top: 0.8rem;
   width: 100%;
   height: 22.4rem;
   background: #ffffff;
 }
-.warp .content .one section .main1 .top {
+.warp .content section .main1 .top {
   width: 100%;
   height: 3.1rem;
   background: 0;
@@ -146,90 +130,90 @@ body {
   color: #ff7f1d;
   font-size: 1.4rem;
 }
-.warp .content .one section .main1 .bottom {
+.warp .content section .main1 .bottom {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   border-top: 2px solid #f2f2f2;
 }
-.warp .content .one section .main1 .bottom .bottom1 {
+.warp .content section .main1 .bottom .bottom1 {
   width: 50%;
   height: 6.3rem;
   background: 0;
   border-right: 1px solid #f2f2f2;
   padding: 0 1rem;
 }
-.warp .content .one section .main1 .bottom .bottom1 dl {
+.warp .content section .main1 .bottom .bottom1 dl {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
 }
-.warp .content .one section .main1 .bottom .bottom1 dl dt {
+.warp .content section .main1 .bottom .bottom1 dl dt {
   width: 2rem;
   height: 6.3rem;
   background: 0;
   line-height: 6.3rem;
 }
-.warp .content .one section .main1 .bottom .bottom1 dl dt img {
+.warp .content section .main1 .bottom .bottom1 dl dt img {
   width: auto;
   height: 2.1rem;
   background: 0;
   vertical-align: middle;
 }
-.warp .content .one section .main1 .bottom .bottom1 dl dd {
+.warp .content section .main1 .bottom .bottom1 dl dd {
   -webkit-box-flex: 1;
   line-height: 2.8rem;
   padding-top: 0.6rem;
   padding-left: 1.3rem;
   box-sizing: border-box;
 }
-.warp .content .one section .main1 .bottom .bottom1 dl dd p {
+.warp .content section .main1 .bottom .bottom1 dl dd p {
   font-weight: bold;
 }
-.warp .content .one section .main1 .bottom .bottom1 dl dd span {
+.warp .content section .main1 .bottom .bottom1 dl dd span {
   display: inline-block;
   color: #808080;
 }
-.warp .content .one section .main2 {
+.warp .content section .main2 {
   margin-top: 0.4rem;
   height: 3rem;
   background: #fff;
   border-bottom: 1px solid #f5f5f5;
 }
-.warp .content .one section .main2 .main2_top {
+.warp .content section .main2 .main2_top {
   padding: 0 1rem;
   display: -webkit-box;
   -webkit-box-orient: horizontal;
 }
-.warp .content .one section .main2 .main2_top .m2_left {
+.warp .content section .main2 .main2_top .m2_left {
   width: 1.8rem;
   height: auto;
   background: 0;
   line-height: 3rem;
 }
-.warp .content .one section .main2 .main2_top .m2_left img {
+.warp .content section .main2 .main2_top .m2_left img {
   width: 1.8rem;
   height: auto;
   background: 0;
   vertical-align: middle;
 }
-.warp .content .one section .main2 .main2_top h3 {
+.warp .content section .main2 .main2_top h3 {
   -webkit-box-flex: 1;
   line-height: 3rem;
   padding-left: 0.8rem;
   box-sizing: border-box;
 }
-.warp .content .one section .main2 .main2_top .m2_right {
+.warp .content section .main2 .main2_top .m2_right {
   width: 0.8rem;
   height: auto;
   background: 0;
   line-height: 3rem;
 }
-.warp .content .one section .main2 .main2_top .m2_right img {
+.warp .content section .main2 .main2_top .m2_right img {
   width: 0.8rem;
   height: auto;
   background: 0;
   vertical-align: middle;
 }
-.warp .content .one section .main2 .info_content {
+.warp .content section .main2 .info_content {
   width: 100%;
   height: 6rem;
   padding: 0 1rem;
@@ -239,33 +223,33 @@ body {
   background: white;
   -webkit-box-orient: horizontal;
 }
-.warp .content .one section .main2 .info_fl {
+.warp .content section .main2 .info_fl {
   line-height: 6rem;
 }
-.warp .content .one section .main2 .info_fl img {
+.warp .content section .main2 .info_fl img {
   width: 4rem;
   height: auto;
   vertical-align: middle;
 }
-.warp .content .one section .main2 .info_fr {
+.warp .content section .main2 .info_fr {
   -webkit-box-flex: 1;
   line-height: 2.4rem;
   padding-left: 1.4rem;
   box-sizing: border-box;
 }
-.warp .content .one section .main2 .info_name {
+.warp .content section .main2 .info_name {
   padding-top: 0.8rem;
   font-size: 1.4rem;
 }
-.warp .content .one section .main2 .info_text,
-.warp .content .one section .main2 .info_time {
+.warp .content section .main2 .info_text,
+.warp .content section .main2 .info_time {
   font-size: 1rem;
   color: #9c9c9c;
 }
-.warp .content .one section .main2 .info_time {
+.warp .content section .main2 .info_time {
   line-height: 6rem;
 }
-footer {
+.warp footer {
   width: 100%;
   height: 4.1rem;
   background: #ffffff;
@@ -273,32 +257,32 @@ footer {
   -webkit-box-orient: horizontal;
   border-top: 1px solid #d9d9d9;
 }
-footer dl {
+.warp footer dl {
   width: 20%;
   text-align: center;
   padding-top: 0.1rem;
   box-sizing: border-box;
 }
-footer dl dt {
+.warp footer dl dt {
   height: 2.5rem;
   line-height: 2.5rem;
 }
-footer dl img {
+.warp footer dl img {
   width: auto;
   height: 1.8rem;
   background: 0;
   vertical-align: middle;
 }
-footer .on dt {
+.warp footer .on dt {
   line-height: 3.8rem;
 }
-footer .on dt img {
+.warp footer .on dt img {
   width: auto;
   height: 3.5rem;
   background: 0;
   vertical-align: middle;
 }
-footer .one img {
+.warp footer img {
   width: auto;
   height: 2.1rem;
   background: 0;
