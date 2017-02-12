@@ -10,7 +10,7 @@
 		<script src="js/angular-1.4.6.js"></script>
 		<script src="js/angular-ui-router.js"></script>
 	</head>
-	<body ui-view="page">
+	<body ui-view="body">
 		<div class="warp">
 			<div class="content" ui-view="content">
 					<header>
@@ -165,7 +165,7 @@
 					<dd>订单状态</dd>
 				</dl>
 				<dl>
-					<dt><a ui-sref="myinf" href=""><img src="images/home/f4.png"/></a></dt>
+					<dt><a ui-sref="myinf" href="#"><img src="images/home/f4.png"/></a></dt>
 					<dd>我的店铺</dd>
 				</dl>
 			</footer>
@@ -174,59 +174,58 @@
 	<script>
 		var app = angular.module("myApp",["ui.router"]);
 		app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
-			$stateProvider.
-
-			state("help",{
+			$stateProvider
+			.state("help",{
 				views:{
-				"page":{
+				"body":{
 						url:"/help",
 						templateUrl:"help.html"
 					}
 				}
-			}).
-			state("index",{
+			})
+			.state("index",{
 				views:{
-					"page":{
+					"body":{
 						url:"/",
 						templateUrl:"index.html"
 					}
 				}
-			}).
-			state("info",{
+			})
+			.state("info",{
 				views:{
-					"page":{
+					"body":{
 						url:"/info",
 						templateUrl:"info.html"
 					}
 				}
-			}).
-			state("comment",{
+			})
+			.state("comment",{
 				views:{
-					"page":{
+					"body":{
 						url:"/comment",
 						templateUrl:"comment.html"
 					}
 				}
-			}).
-			state("login",{
+			})
+			.state("login",{
 				views:{
-					"page":{
+					"body":{
 						url:"/login",
 						templateUrl:"login.html"
 					}
 				}
-			}).
-			state("myinf",{
+			})
+			.state("myinf",{
 				views:{
-					"page":{
+					"body.content":{
 						url:"/myinf",
 						templateUrl:"myinf.html"
 					}
 				}
-			}).
-			state("fzb",{
+			})
+			.state("fzb",{
 				views:{
-					"page":{
+					"body":{
 						url:"/fzb",
 						templateUrl:"fzb.html"
 					}
