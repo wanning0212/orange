@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/Modify/Modify.css" />
+    <link rel="stylesheet" href="css/cover.css"/>
+    <script type="text/javascript" src="js/auto.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+</head>
+<body>
+    <div class="Modify">
+        <header>
+            <div class="head1"><a href="javascript:hBack()"><img src="images/help/h-back.png" alt="" /></a></div>
+            <div class="head2">收货人信息</div>
+            <div class="head3"></div>
+        </header>
+        <div class="null"></div>
+        <section>
+            <div class="two_main">
+                <span>收货人：</span><input type="text" placeholder="沙发咖啡"/>
+            </div>
+            <div class="two_main">
+                <span>手机号：</span><input type="text" placeholder="189-1231-3689"/>
+            </div>
+            <div class="two_main">
+                <span>所在地区：</span><input type="text" placeholder="北京、海淀"/> <a href="javascript:ress()"><img src="images/help/right-arrow.png" alt=""/></a>
+            </div>
+            <div class="two_main">
+                <span>具体地址：</span><input type="text" placeholder="XX路、XX楼"/>
+            </div>
+            <!--<div class="two_main"></div>-->
+            <div class="save">
+               <button class="cunS">保存修改</button>
+            </div>
+        </section>
+    </div>
+    <div class="cover"></div>
+    <div class="info_frame">
+        <div class="confirm">
+            <p class="que">确定返回</p>
+            <p class="mass">你填写的信息尚未保存，确定返回吗？</p>
+        </div>
+        <div class="btn">
+            <ul>
+                <li class="sss"><button class="no">取消</button></li>
+                <li><button class="yes">确定</button></li>
+            </ul>
+        </div>
+    </div>
+        <div class="info_address">
+            <div class="task">
+                <a href="javascript:;" class="deselect">取消</a>
+                <a href="javascript:;" class="accomplish">完成</a>
+            </div>
+            <div class="diz">
+                <div class="resd">
+                    <div class="address">
+                        <div class="province">
+                            <ul>
+                                <li>北京</li>
+                                <li>北京</li>
+                                <li>北京</li>
+                            </ul>
+                        </div>
+                        <div class="city">
+                            <ul>
+                                <li>北京市</li>
+                                <li>北京市</li>
+                                <li>北京市</li>
+                            </ul>
+                        </div>
+                        <div class="district">
+                            <ul>
+                                <li>海定区</li>
+                                <li>海定区</li>
+                                <li>海定区</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+//    返回显示遮罩层
+    function hBack(){
+        $(".cover,.info_frame").show();
+    }
+//     点击确定返回第一页面
+    $(".yes").click(function(){
+        window.history.go(-1);location.reload();
+    });
+//        点击取消隐藏
+    $(".no").click(function(){
+        $(".cover,.info_frame").hide();
+    })
+//        点击地址》显示
+    function ress(){
+        $(".cover,.info_address").show();
+    }
+    $(".accomplish").click(function(){
+       location.reload();
+    });
+    $(".deselect").click(function(){
+        $(".cover,.info_address").hide();
+    })
+//        确定完成返回首页
+    $(".cunS").click(function(){
+        window.history.go(-1);location.reload();
+    });
+</script>
+</html>

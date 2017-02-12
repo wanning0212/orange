@@ -1,0 +1,228 @@
+@import url(../reset.css);
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+body {
+  background: #f2f2f2;
+}
+.Modify {
+  width: 100%;
+  height: 100%;
+  background: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.Modify header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.Modify header .head1 {
+  width: 2rem;
+  height: 3.6rem;
+  background: none;
+}
+.Modify header .head1 img {
+  width: 1rem;
+  height: 1.7rem;
+  background: none;
+}
+.Modify header .head2 {
+  -webkit-box-flex: 1;
+  font-size: 1.6rem;
+}
+.Modify header .head3 {
+  width: 2rem;
+  height: 3.6rem;
+  background: none;
+}
+.Modify header .head3 img {
+  width: 1.8rem;
+  height: 1.7rem;
+  background: none;
+}
+.Modify .null {
+  width: 100%;
+  height: 0.3rem;
+  background: #e3e3e3;
+}
+.Modify section {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+  font-size: 1.2rem;
+  color: #757575;
+}
+.Modify section::-webkit-scrollbar {
+  width: 0;
+}
+.Modify section .two_main {
+  width: 100%;
+  height: 2.5rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #b4b4b4;
+  margin-bottom: 0.2rem;
+}
+.Modify section .two_main span {
+  color: #3d3d3d;
+}
+.Modify section .two_main input {
+  outline: none;
+  border: none;
+}
+.Modify section .two_main a {
+  float: right;
+}
+.Modify section .two_main a img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  padding-top: 0.6rem;
+  box-sizing: border-box;
+}
+.Modify section .save {
+  width: 100%;
+  height: 2.5rem;
+  background: none;
+  margin-top: 2.5rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.Modify section .save button {
+  width: 100%;
+  height: 2.5rem;
+  background: #ff7f1c;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  line-height: 2.5rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+}
+.info_frame {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  margin-left: -10rem;
+  margin-top: -5rem;
+  width: 20rem;
+  height: 10rem;
+  background: #fff;
+  display: none;
+  border-radius: 6px;
+}
+.info_frame .confirm {
+  width: 20rem;
+  height: 7rem;
+  background: none;
+  text-align: center;
+  line-height: 2rem;
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+}
+.info_frame .confirm .que {
+  color: #010101;
+  font-size: 1.4rem;
+}
+.info_frame .confirm .mass {
+  color: #404040;
+  font-size: 1rem;
+}
+.info_frame .btn {
+  width: 20rem;
+  height: 3rem;
+  background: none;
+}
+.info_frame .btn ul {
+  width: 20rem;
+  height: 2rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+.info_frame .btn ul li {
+  width: 10rem;
+  height: 3rem;
+  background: none;
+}
+.info_frame .btn ul li button {
+  width: 10rem;
+  height: 3rem;
+  background: none;
+  color: #90bcfb;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}
+.info_frame .btn ul .sss {
+  border-right: 1px solid #e5e5e5;
+}
+.info_address {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  height: 18rem;
+  background: #fff;
+  display: none;
+}
+.info_address .task {
+  width: 100%;
+  height: 3rem;
+  background: none;
+  background: linear-gradient(to bottom, #e8e8e8, #f2f2f2);
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  color: #6ba1f8;
+}
+.info_address .task .deselect {
+  float: left;
+}
+.info_address .task .accomplish {
+  float: right;
+}
+.info_address .diz {
+  width: 100%;
+  height: 15rem;
+  background: #ededed;
+}
+.info_address .resd {
+  padding-top: 5.4rem;
+}
+.info_address .resd .address {
+  width: 100%;
+  height: 2.6rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  line-height: 2.6rem;
+  color: #616468;
+  border-top: 2px solid #d8d8d8;
+  border-bottom: 2px solid #d8d8d8;
+}
+.info_address .resd .address div {
+  -webkit-box-flex: 1;
+}
