@@ -4,13 +4,22 @@
 	background: #FFFFFF;
 	text-align: center;
 	line-height: 4rem;
+	margin-bottom: 0.1rem;
 }
 .select_nav ul{
 	display: -webkit-box;
   	-webkit-box-orient: horizontal;
 }
 .select_nav ul li{
-	-webkit-box-flex: 1;
+	width: 25%;
+}
+.select_nav ul .on{
+	color: #ff7f1d;
+	border-bottom: 1px solid #ff7f1d;
+}
+.select_nav ul li:not(:last-child){
+	background: url(../../images/caiwu/shuxian.png) no-repeat right center;
+	background-size:auto 3rem ;
 }
 .select_nav ul .aimg{
 	height: 3rem;
@@ -18,4 +27,26 @@
 .select_nav ul li a>img{
 	width: 1.2rem;
 	height: 0.7rem;
+}
+.select_data{
+	padding: 1rem;
+	background: #ffffff;
+	margin-top: 0.5rem;
+	box-sizing: border-box;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+.select_data dl{
+	-webkit-box-flex: 1;
+	line-height: 1.7rem;
+}
+.select_data dl dt .clo{
+	color: #5054b1;
+}
+.select_data dl dt .clo2{
+	color: #f88282;
+}
+.select_data .select_fr{
+	text-align: right;
+
 }

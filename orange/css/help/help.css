@@ -25,6 +25,7 @@ body {
   padding: 1rem;
   box-sizing: border-box;
   text-align: center;
+  border-bottom: 1px solid #bfbfbf;
 }
 .two header .head1 {
   width: 2rem;
