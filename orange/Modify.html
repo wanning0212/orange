@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <title></title>
+    <title>收货人信息</title>
     <link rel="stylesheet" type="text/css" href="css/Modify/Modify.css" />
     <link rel="stylesheet" href="css/cover.css"/>
     <script type="text/javascript" src="js/auto.js"></script>
-    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <!--<script type="text/javascript" src="js/zepto.min.js"></script>-->
 </head>
 <body>
     <div class="Modify">
         <header>
-            <div class="head1"><a href="javascript:hBack()"><img src="images/help/h-back.png" alt="" /></a></div>
+            <div class="head1"><a  ng-click="isShow=!isShow;isClick=!isClick" href="#"><img src="images/help/h-back.png" alt="" /></a></div>
             <div class="head2">收货人信息</div>
             <div class="head3"></div>
         </header>
@@ -26,7 +26,7 @@
                 <span>手机号：</span><input type="text" placeholder="189-1231-3689"/>
             </div>
             <div class="two_main">
-                <span>所在地区：</span><input type="text" placeholder="北京、海淀"/> <a href="javascript:ress()"><img src="images/help/right-arrow.png" alt=""/></a>
+                <span>所在地区：</span><input type="text" placeholder="北京、海淀"/> <a href="javascript:;"><img src="images/help/right-arrow.png" alt=""/></a>
             </div>
             <div class="two_main">
                 <span>具体地址：</span><input type="text" placeholder="XX路、XX楼"/>
@@ -37,23 +37,23 @@
             </div>
         </section>
     </div>
-    <div class="cover"></div>
-    <div class="info_frame">
+    <div class="cover" ng-hide="isShow"></div>
+    <div class="info_frame" ng-hide="isClick">
         <div class="confirm">
             <p class="que">确定返回</p>
             <p class="mass">你填写的信息尚未保存，确定返回吗？</p>
         </div>
         <div class="btn">
             <ul>
-                <li class="sss"><button class="no">取消</button></li>
-                <li><button class="yes">确定</button></li>
+                <li class="sss"><button class="no" ng-click="isShow=!isShow">取消</button></li>
+                <li><button class="yes" ng-click="hack()">确定</button></li>
             </ul>
         </div>
     </div>
-        <div class="info_address">
+        <div class="info_address" ng-hide="isClick">
             <div class="task">
-                <a href="javascript:;" class="deselect">取消</a>
-                <a href="javascript:;" class="accomplish">完成</a>
+                <a href="javascript:;" ng-click="isShow=!isShow;isClick=!isClick" class="deselect">取消</a>
+                <a href="javascript:;" ng-click="isShow=!isShow;isClick=!isClick" class="accomplish">完成</a>
             </div>
             <div class="diz">
                 <div class="resd">
@@ -85,31 +85,31 @@
         </div>
 </body>
 <script>
-//    返回显示遮罩层
-    function hBack(){
-        $(".cover,.info_frame").show();
-    }
-//     点击确定返回第一页面
-    $(".yes").click(function(){
-        window.history.go(-1);location.reload();
-    });
-//        点击取消隐藏
-    $(".no").click(function(){
-        $(".cover,.info_frame").hide();
-    })
-//        点击地址》显示
-    function ress(){
-        $(".cover,.info_address").show();
-    }
-    $(".accomplish").click(function(){
-       location.reload();
-    });
-    $(".deselect").click(function(){
-        $(".cover,.info_address").hide();
-    })
-//        确定完成返回首页
-    $(".cunS").click(function(){
-        window.history.go(-1);location.reload();
-    });
+////    返回显示遮罩层
+//    function hBack(){
+//        $(".cover,.info_frame").show();
+//    }
+////     点击确定返回第一页面
+//    $(".yes").click(function(){
+//        window.history.go(-1);location.reload();
+//    });
+////        点击取消隐藏
+//    $(".no").click(function(){
+//        $(".cover,.info_frame").hide();
+//    });
+////        点击地址》显示
+//    function ress(){
+//        $(".cover,.info_address").show();
+//    }
+//    $(".accomplish").click(function(){
+//       location.reload();
+//    });
+//    $(".deselect").click(function(){
+//        $(".cover,.info_address").hide();
+//    });
+////        确定完成返回首页
+//    $(".cunS").click(function(){
+//        window.history.go(-1);location.reload();
+//    });
 </script>
 </html>

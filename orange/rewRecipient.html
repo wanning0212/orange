@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <title></title>
+    <title>新建收件人信息</title>
     <link rel="stylesheet" type="text/css" href="css/Modify/Modify.css" />
     <link rel="stylesheet" href="css/cover.css"/>
-    <script type="text/javascript" src="js/auto.js"></script>
-    <script type="text/javascript" src="js/zepto.min.js"></script>
-    <script src="js/jquery-3.1.1.js"></script>
 </head>
 <body>
 <div class="Modify">
     <header>
-        <div class="head1"><a href="javascript:hBack()"><img src="images/help/h-back.png" alt="" /></a></div>
+        <div class="head1"><a href="#"><img src="images/help/h-back.png" alt="" /></a></div>
         <div class="head2">新建收件人信息</div>
         <div class="head3"></div>
     </header>
@@ -38,7 +35,7 @@
         </div>
     </section>
     <div class="cover"></div>
-    <div class="info_address">
+    <div class="info_address"  ng-hide="isShow">
         <div class="task">
             <a href="javascript:;" class="deselect">取消</a>
             <a href="javascript:;" class="accomplish">完成</a>
@@ -73,27 +70,4 @@
     </div>
 </div>
 </body>
-<script>
-//    function hBack(){
-//        $(".cover,.info_frame").show();
-//    }
-//    $(".yes").click(function(){
-//        window.history.go(-1);location.reload();
-//    });
-//    $(".no").click(function(){
-//        $(".cover,.info_frame").hide();
-//    })
-    function ress(){
-        $(".cover,.info_address").show();
-    }
-    $(".accomplish").click(function(){
-        location.reload();
-    });
-    $(".deselect").click(function(){
-        $(".cover,.info_address").hide();
-    })
-//    $(".cunS").click(function(){
-//        window.history.go(-1);location.reload();
-//    });
-</script>
 </html>
