@@ -16,66 +16,99 @@ body {
   -webkit-box-orient: vertical;
 }
 .warp .logo {
-  width: 9rem;
-  height: 20.3rem;
+  width: 4.48rem;
+  height: auto;
   background: 0;
-  padding-top: 5.8rem;
+  padding-top: 2.816rem;
   box-sizing: border-box;
   margin: 0 auto;
 }
 .warp .logo img {
-  width: 8.5rem;
+  width: 4.48rem;
   height: auto;
   background: 0;
 }
 .warp .logo p {
   text-align: center;
-  line-height: 4rem;
-  font-size: 1.6rem;
+  font-size: 0.85333333rem;
+  padding: 0.64rem 0;
+  box-sizing: border-box;
 }
 .warp .form {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
-  padding: 1.7rem 3rem 0;
+  padding: 0 1.536rem;
   box-sizing: border-box;
 }
 .warp .form span {
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  width: 1.45066667rem;
+  height: 1.45066667rem;
   background: 0;
   border: 1px solid #fd8932;
   border-radius: 50%;
-  line-height: 2.8rem;
-  margin-right: 1.2rem;
+  text-align: center;
   box-sizing: border-box;
 }
 .warp .form span img {
-  width: 1.2rem;
-  height: auto;
+  width: 0.64rem;
+  height: 0.93866667rem;
   background: 0;
   vertical-align: middle;
-  margin-left: 0.8rem;
 }
 .warp .form .input {
   -webkit-box-flex: 1;
-  border-bottom: 2px solid #ff7d1b;
+  border-bottom: 1px solid #ff7d1d;
+  margin-left: 0.576rem;
+  font-size: 0.64rem;
 }
-.warp .form .input .txt {
+.warp .form .input #txt {
+  width: 100%;
   border: none;
+  background: none;
+  padding-top: 0.36266667rem;
   outline: none;
-  background: 0;
-  height: 2.6rem;
-  font-size: 1.4rem;
 }
-.warp .form .input .eyes {
-  display: inline-block;
-  width: 2rem;
-  height: 1.6rem;
-  background: 0;
-  background: url(../../images/login/eyes.png) no-repeat right center;
-  background-size: 2rem auto ;
+.warp .two {
+  padding-top: 0.85333333rem;
+  box-sizing: border-box;
+}
+.warp .two .eyes {
   position: relative;
+  width: 1.06666667rem;
+  height: 0.64rem;
+  background: 0;
+}
+.warp .two .eyes img {
+  width: 1.06666667rem;
+  height: 0.64rem;
+  background: 0;
+  position: absolute;
+  right: 0;
   top: 0;
-  left: 0;
+}
+.warp .btn {
+  padding: 1.28rem 0.704rem 0.64rem;
+}
+.warp .btn button {
+  width: 100%;
+  height: 1.70666667rem;
+  background: #ff7d1b;
+  border: none;
+  border-radius: 0.21333333rem;
+  font-size: 0.768rem;
+  color: #fff;
+}
+.warp .bottom {
+  padding: 0 0.704rem;
+}
+.warp .bottom a {
+  font-size: 0.512rem;
+  color: #4e7eaf;
+}
+.warp .bottom .a_left {
+  float: left;
+}
+.warp .bottom .a_right {
+  float: right;
 }

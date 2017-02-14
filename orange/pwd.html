@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<script type="text/javascript">
+			setRem();
+			window.addEventListener("orientationchange", setRem);
+			window.addEventListener("resize", setRem);
+			function setRem() {
+				var html = document.querySelector("html");
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 16 + "px";
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/login/register.css"/>
+	</head>
+	<body>
+		<div class="reg_warp">
+			<header>
+				<span><img src="images/login/fan.png"/></span>
+				<h2>密码重置</h2>
+			</header>
+			<section>
+				<div class="form">
+					<input type="text" placeholder="请输入新密码"/>
+				</div>
+				<div class="form">
+					<input type="text" placeholder="请再次输入密码"/>
+				</div>
+				<div class="form">
+					<input type="text" placeholder="请输入手机号"/>
+				</div>
+				<div class="form">
+					<input type="text" placeholder="请输入验证码"/>
+				</div>
+				<div class="btn">
+				<button>提交</button>
+			</div>
+			</section>
+		</div>
+	</body>
+</html>

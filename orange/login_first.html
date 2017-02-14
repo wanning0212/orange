@@ -5,19 +5,27 @@
 		<meta charset="UTF-8" />
 		<title>Document</title>
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<script src="js/liu.js"></script>
+		<script type="text/javascript">
+			setRem();
+			
+			window.addEventListener("orientationchange", setRem);
+			window.addEventListener("resize", setRem);
+
+			function setRem() {
+				var html = document.querySelector("html");
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 16 + "px";
+			}
+		</script>
 		<link rel="stylesheet" type="text/css" href="css/login/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/login/login_first.css"/>
 	</head>
 
 	<body>
 		<div class="warp">
-			<div class="logo">
-				<img src="images/login/logo.png" />
-				<p>优橙科技</p>
-			</div>
-			<div class="form">
-				<span class="tel"><img src="images/login/tel.png"/></span>
-				<div class="input"><input type="text" name="" id="txt" value=""  placeholder="请输入绑定的手机号"/></div>
+			<div class="photo">
+				<img src="images/login/photo.png" />
+				<p>Json</p>
 			</div>
 			<div class="form two">
 				<span class="tel"><img src="images/login/psd.png"/></span>
