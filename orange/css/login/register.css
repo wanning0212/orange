@@ -1,0 +1,73 @@
+@import url(../reset.css);
+html,
+body,
+.reg_warp {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+.reg_warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+body {
+  background: #f2f2f2;
+}
+header {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 1.87733333rem;
+  background: #f7f7f7;
+  padding: 0 0.46933333rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cccccc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 0.81066667rem;
+  line-height: 1.87733333rem;
+}
+header span {
+  display: inline-block;
+  width: 0.42666667rem;
+  height: 0.74666667rem;
+  background: 0;
+  line-height: 0.74666667rem;
+}
+header span img {
+  width: 0.42666667rem;
+  height: 0.74666667rem;
+  background: 0;
+  vertical-align: middle;
+}
+section {
+  width: 100%;
+  height: 6.95466667rem;
+  background: #ffffff;
+  padding: 0 0.46933333rem;
+}
+section .form {
+  border-bottom: 1px solid #cccccc;
+}
+section .form input {
+  height: 1.70666667rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.55466667rem;
+}
+section .btn {
+  margin-top: 0.85333333rem;
+}
+section .btn button {
+  width: 100%;
+  height: 1.70666667rem;
+  background: #ff7d1b;
+  border: none;
+  border-radius: 0.21333333rem;
+  font-size: 0.768rem;
+  color: #fff;
+}

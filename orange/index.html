@@ -177,10 +177,11 @@
 			$scope.isHide = true;
 			$scope.isClick = true;
 			$scope.hack = function () {
-				$state.go("index");
+				$state.go("help");
 			};
 		});
 		app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
+			$urlRouterProvider.otherwise("/")
 			$stateProvider
 			.state("help",{
 				views:{

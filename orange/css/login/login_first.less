@@ -1,0 +1,40 @@
+@import url(../reset.css);
+.whb(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir; //horizontal
+}
+html,
+body,
+.warp {
+    .whb(100%,100%,0);
+    background: rgba(255,255,255,0.85);
+}
+body {
+    background: url("../../images/login/bg.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+@rem: 46.875rem;
+
+.photo{
+    .whb(203/@rem,auto,0);
+    padding-top: 130/@rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    img{
+        .whb(203/@rem,203/@rem,0);
+        border-radius: 50%;
+    }
+    p{
+        padding: 40/@rem 0;
+        text-align: center;
+        color: #666666;
+    }
+}
+.form{
+    margin-top: 80/@rem;
+}
