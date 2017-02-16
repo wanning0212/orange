@@ -1,0 +1,162 @@
+@import url(../reset.css);
+html,
+body,
+.fans {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+body {
+  background: #f2f2f2;
+}
+.fans {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.fans header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: 1px solid #c0c0c0 ;
+}
+.fans header .head1 {
+  width: 2rem;
+  height: 3.6rem;
+  background: none;
+}
+.fans header .head1 img {
+  width: 1rem;
+  height: 1.7rem;
+  background: none;
+}
+.fans header .head2 {
+  -webkit-box-flex: 1;
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+.fans header .head3 {
+  width: 3rem;
+  height: 3.6rem;
+  background: none;
+}
+.fans header .head3 a {
+  color: #1a1a1a;
+  font-size: 1.4rem;
+}
+.fans section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: auto;
+}
+.fans section::-webkit-scrollbar {
+  width: 0;
+}
+.fans section .fansMain {
+  width: 100%;
+  height: 4.3rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin: 0.4rem 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.fans section .fansMain .fansImg {
+  width: 4.6rem;
+  height: 4.6rem;
+  background: none;
+  line-height: 4.6rem;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+}
+.fans section .fansMain .fansImg img {
+  width: 3.6rem;
+  height: 3.6rem;
+  background: none;
+  border-radius: 1.8rem;
+}
+.fans section .fansMain .fansName {
+  -webkit-box-flex: 1;
+  line-height: 4.3rem;
+  color: #191919;
+  font-size: 1.2rem;
+}
+.fans section .SYB {
+  width: 100%;
+  height: 3.5rem;
+  background: #ffffff;
+  margin-bottom: 0.1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 3.5rem;
+  font-size: 1.2rem;
+  color: #484848;
+}
+.fans section .relevance {
+  width: 100%;
+  height: 3.5rem;
+  background: none;
+  margin-top: 0.4rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.fans section .relevance button {
+  width: 100%;
+  height: 3.5rem;
+  background: #cccccc;
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  line-height: 3.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+.info_frame {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  margin-left: -10rem;
+  margin-top: -5rem;
+  width: 20rem;
+  height: 10rem;
+  background: #fff;
+  display: none;
+  border-radius: 6px;
+}
+.info_frame .confirm {
+  width: 20rem;
+  height: 7rem;
+  background: none;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1rem;
+  color: #242424;
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+}
+.info_frame .btn {
+  width: 20rem;
+  height: 3rem;
+  background: none;
+  border-top: 1px solid #e5e5e5;
+}
+.info_frame .btn button {
+  width: 20rem;
+  height: 3rem;
+  background: none;
+  color: #037ef8;
+  text-align: center;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,262 @@
+@import url(../reset.css);
+html,
+body,
+.release {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+body {
+  background: #f2f2f2;
+}
+.release {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.release header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.release header .head1 {
+  width: 2rem;
+  height: 3.6rem;
+  background: none;
+}
+.release header .head1 img {
+  width: 1rem;
+  height: 1.7rem;
+  background: none;
+}
+.release header .head2 {
+  -webkit-box-flex: 1;
+  font-size: 1.6rem;
+  color: #1a1a1a;
+}
+.release header .head3 {
+  width: 3rem;
+  height: 3.6rem;
+  background: none;
+}
+.release header .head3 a {
+  color: #1a1a1a;
+  font-size: 1.4rem;
+}
+.release .null {
+  width: 100%;
+  height: 0.3rem;
+  background: #e3e3e3;
+}
+.release section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: auto;
+}
+.release section::-webkit-scrollbar {
+  width: 0;
+}
+.release section .release_img {
+  width: 100%;
+  height: 9.7rem;
+  background: #ffffff;
+}
+.release section .release_img p {
+  width: 100%;
+  height: 2.8rem;
+  background: none;
+  line-height: 2.8rem;
+  color: #575757;
+  font-size: 1.4rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f1f1f1;
+}
+.release section .release_img p span {
+  color: #dadada;
+  font-size: 1rem;
+}
+.release section .release_img ul {
+  width: 100%;
+  height: 6.9rem;
+  background: #ffffff;
+  text-align: center;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+}
+.release section .release_img ul li {
+  float: left;
+  margin-right: 0.8rem;
+}
+.release section .release_img ul li img {
+  width: 5.2rem;
+  height: 5.2rem;
+  background: none;
+}
+.release section .massMain {
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  color: #3d3d3d;
+  margin-bottom: 0.2rem;
+}
+.release section .release_main {
+  width: 100%;
+  height: 2.5rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #b4b4b4;
+  margin-bottom: 0.2rem;
+}
+.release section .release_main span {
+  color: #3d3d3d;
+  font-size: 1.2rem;
+}
+.release section .release_main input {
+  width: auto;
+  min-width: 20rem;
+  outline: none;
+  border: none;
+}
+.release section .type {
+  width: 100%;
+  height: 18.5rem;
+  background: #ffffff;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+}
+.release section .type .massMain {
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  color: #3d3d3d;
+}
+.release section .tableBox {
+  width: 100%;
+  height: 10.5rem;
+  background: none;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+.release section .tableBox .tables {
+  width: 100%;
+  height: 9.6rem;
+  background: none;
+  border: 1px solid #c9c9c9;
+  border-radius: 0.6rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.release section .tableBox .tables .danjia {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.release section .tableBox .tables .danjia > div {
+  -webkit-box-flex: 1;
+  padding-left: 0.8rem;
+  padding-top: 0.2rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #c9c9c9;
+}
+.release section .tableBox .tables .danjia > div span {
+  color: #3d3d3d;
+  font-size: 1.2rem;
+}
+.release section .tableBox .tables .danjia > div input {
+  width: auto;
+  min-width: 20rem;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+.release section .tableBox .tables .del {
+  width: 3.3rem;
+  height: 9.6rem;
+  background: none;
+  border-left: 1px solid #c9c9c9;
+  text-align: center;
+  line-height: 10rem;
+}
+.release section .tableBox .tables .del img {
+  width: 1.5rem;
+  height: auto;
+  background: none;
+}
+.release section .save {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 5rem;
+}
+.release section .save button {
+  width: 100%;
+  height: 2.5rem;
+  background: #f0f0f0;
+  background: url("../../images/shop/view/yuanjia.png") no-repeat 36% center;
+  background-size: 1.6rem 1.6rem;
+  font-size: 1.4rem;
+  color: #373737;
+  text-align: center;
+  line-height: 2.5rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: 1px solid #bcbcbc;
+  outline: none;
+}
+.release section .relMan {
+  width: 100%;
+  height: 2.5rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+}
+.release section .relMan .remMan_z {
+  float: left;
+}
+.release section .relMan .remMan_k {
+  width: auto;
+  height: 2.5rem;
+  background: #ffffff;
+  float: right;
+}
+.release section .relMan .remMan_k span {
+  display: inline-block;
+  line-height: 2.5rem;
+  color: #959595;
+}
+.release section .relMan .remMan_k a {
+  display: inline-block;
+  margin-top: 0.3rem;
+  margin-left: 0.8rem;
+  box-sizing: border-box;
+}
+.release section .relMan .remMan_k a img {
+  width: 1rem;
+  height: 1.5rem;
+  background: none;
+}
