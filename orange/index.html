@@ -8,7 +8,6 @@
 		<script type="text/javascript" src="js/auto.js"></script>
 		<script src="js/angular-1.4.6.js"></script>
 		<script src="js/angular-ui-router.js"></script>
-		<script src="js/angular-animate.js"></script>
 	</head>
 	<body ui-view="body" ng-controller="myBody">
 		<div class="warp">
@@ -170,84 +169,7 @@
 			</footer>
 		</div>
 	</body>
-	<script>
-		var app = angular.module("myApp",["ui.router"]);
-		app.controller("myBody",function ($scope,$state) {
-			$scope.isShow = true;
-			$scope.isHide = true;
-			$scope.isClick = true;
-			$scope.hack = function () {
-				$state.go("help");
-			};
-		});
-		app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
-			$urlRouterProvider.otherwise("/")
-			$stateProvider
-			.state("help",{
-				views:{
-				"body":{
-						url:"/help",
-						templateUrl:"help.html"
-					}
-				}
-			})
-			.state("index",{
-				views:{
-					"body":{
-						url:"/",
-						templateUrl:"index.html"
-					}
-				}
-			})
-			.state("info",{
-				views:{
-					"body":{
-						url:"/info",
-						templateUrl:"info.html"
-					}
-				}
-			})
-			.state("comment",{
-				views:{
-					"body":{
-						url:"/comment",
-						templateUrl:"comment.html"
-					}
-				}
-			})
-			.state("login",{
-				views:{
-					"body":{
-						url:"/login",
-						templateUrl:"login.html"
-					}
-				}
-			})
-			.state("myinf",{
-				views:{
-					"body.content":{
-						url:"/myinf",
-						templateUrl:"myinf.html"
-					}
-				}
-			})
-			.state("fzb",{
-				views:{
-					"body":{
-						url:"/fzb",
-						templateUrl:"fzb.html"
-					}
-				}
-			})
-			.state("Modify",{
-				views:{
-					"body":{
-						url:"/Modify",
-						templateUrl:"Modify.html",
-						controller: "myBody"
-					}
-				}
-			})
-		}])
-	</script>
+	<script src="js/app.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/router.js"></script>
 </html>

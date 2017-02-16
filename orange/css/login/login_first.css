@@ -12,24 +12,24 @@ body {
   background-size: 100% 100%;
 }
 .photo {
-  width: 4.33066667rem;
+  width: 8.12rem;
   height: auto;
   background: 0;
-  padding-top: 2.77333333rem;
+  padding-top: 5.2rem;
   box-sizing: border-box;
   margin: 0 auto;
 }
 .photo img {
-  width: 4.33066667rem;
-  height: 4.33066667rem;
+  width: 8.12rem;
+  height: 8.12rem;
   background: 0;
   border-radius: 50%;
 }
 .photo p {
-  padding: 0.85333333rem 0;
+  padding: 1.6rem 0;
   text-align: center;
   color: #666666;
 }
 .form {
-  margin-top: 1.70666667rem;
+  margin-top: 3.2rem;
 }

@@ -16,94 +16,95 @@ body {
   -webkit-box-orient: vertical;
 }
 .warp .logo {
-  width: 4.48rem;
+  width: 10.5rem;
   height: auto;
   background: 0;
-  padding-top: 2.816rem;
+  padding-top: 6.6rem;
   box-sizing: border-box;
   margin: 0 auto;
 }
 .warp .logo img {
-  width: 4.48rem;
+  width: 10.5rem;
   height: auto;
   background: 0;
 }
 .warp .logo p {
   text-align: center;
-  font-size: 0.85333333rem;
-  padding: 0.64rem 0;
+  font-size: 2rem;
+  padding: 1.5rem 0;
   box-sizing: border-box;
 }
 .warp .form {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
-  padding: 0 1.536rem;
+  padding: 0 3.6rem;
   box-sizing: border-box;
 }
 .warp .form span {
   display: inline-block;
-  width: 1.45066667rem;
-  height: 1.45066667rem;
+  width: 3.4rem;
+  height: 3.4rem;
   background: 0;
-  border: 1px solid #fd8932;
-  border-radius: 50%;
+  line-height: 3.4rem;
+  /*border: 1px solid #fd8932;*/
+  /*border-radius: 50%;*/
   text-align: center;
   box-sizing: border-box;
 }
 .warp .form span img {
-  width: 0.64rem;
-  height: 0.93866667rem;
+  width: 3.4rem;
+  height: auto;
   background: 0;
   vertical-align: middle;
 }
 .warp .form .input {
   -webkit-box-flex: 1;
   border-bottom: 1px solid #ff7d1d;
-  margin-left: 0.576rem;
-  font-size: 0.64rem;
+  margin-left: 1.35rem;
+  font-size: 1.5rem;
 }
-.warp .form .input #txt {
+.warp .form .input .txt {
   width: 100%;
   border: none;
   background: none;
-  padding-top: 0.36266667rem;
+  padding-top: 0.85rem;
   outline: none;
 }
 .warp .two {
-  padding-top: 0.85333333rem;
+  padding-top: 2rem;
   box-sizing: border-box;
 }
 .warp .two .eyes {
   position: relative;
-  width: 1.06666667rem;
-  height: 0.64rem;
+  width: 2.5rem;
+  height: 1.5rem;
   background: 0;
 }
 .warp .two .eyes img {
-  width: 1.06666667rem;
-  height: 0.64rem;
+  width: 2.5rem;
+  height: 1.5rem;
   background: 0;
   position: absolute;
   right: 0;
   top: 0;
 }
 .warp .btn {
-  padding: 1.28rem 0.704rem 0.64rem;
+  padding: 3rem 1.65rem 1.5rem;
 }
 .warp .btn button {
   width: 100%;
-  height: 1.70666667rem;
+  height: 4rem;
   background: #ff7d1b;
   border: none;
-  border-radius: 0.21333333rem;
-  font-size: 0.768rem;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
   color: #fff;
 }
 .warp .bottom {
-  padding: 0 0.704rem;
+  padding: 0 1.65rem;
 }
 .warp .bottom a {
-  font-size: 0.512rem;
+  font-size: 1.2rem;
   color: #4e7eaf;
 }
 .warp .bottom .a_left {
