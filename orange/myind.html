@@ -2,28 +2,27 @@
 <html>
 
 	<head>
-		<meta charset="utf-8">
+		<!--<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title>优橙</title>
+		<title>优橙</title>-->
 		<link rel="stylesheet" type="text/css" href="css/myind/myind.css" />
-		<link rel="stylesheet" type="text/css" href="css/myind/swiper.min.css"/>
 	</head>
 
-	<body>
-		<div class="myind">
+	<body ng-app="myApp">
+		<div class="myind" >
 			<header>
-				<div class="status-header-left">
+				<a class="status-header-left" ui-sref="index" >
 					<img src="images/myind/h-back.png" alt="" />
-				</div>
+				</a>
 				<div class="status-header-mid">
-					<span class="goods-status">商品订单</span>
-					<span class="yc-status">优橙订单</span>
+					<button class="goods-status seled">商品订单</button>
+					<button class="yc-status">优橙订单</button>
 				</div>
-				<div class="status-header-right"><img src="images/myind/h-news.png" /></div>
+				<a class="status-header-right"><img src="images/myind/h-news.png" /></a>
 			</header>
-			<nav class="status-nav">
+			<!--<nav class="status-nav">
 				<!-- Swiper 导航 -->
-				<div class="swiper-container">
+				<!--<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<a class="selected">
@@ -62,8 +61,8 @@
 							</a>
 						</div>
 					</div>
-				</div>
-				<script src="js/swiper.min.js"></script>
+				</div>-->
+				<!--<script src="js/swiper.min.js"></script>
 				<script>
 					var swiper = new Swiper('.swiper-container', {
 						//									pagination: '.swiper-pagination',
@@ -71,124 +70,51 @@
 						paginationClickable: true,
 						spaceBetween: 0
 					});
-				</script>
+				</script>-->
 
 				<!--导航  end-->
-				<a class="nav-more"></a>
-			</nav>
+				<!--<a class="nav-more"></a>
+			</nav>-->
+			<div class="navBox">
+				<div class="nav">
+					<div class="navDl">
+						<dl class="add">
+							<dt>81</dt>
+							<dd>全部</dd>
+						</dl>
+						<dl>
+							<dt>81</dt>
+							<dd>未付款</dd>
+						</dl>
+						<dl>
+							<dt>81</dt>
+							<dd>待发货</dd>
+						</dl>
+						<dl>
+							<dt>81</dt>
+							<dd>全部</dd>
+						</dl>
+					</div>
+					<div class="navImg"><img src="images/myind/choose-arrow.png" alt="" /></div>
+				</div>
+			</div>
 			<section class="status-goods">
 				<!--商品订单-->
-				<!--<div class="goods-list-warp">-->
-				<div class="status-list">
+				<div class="status-list" ng-repeat="y in ind">
 					<p class="status-list-top">
-						<span>订单编号 : <b>ZD1039123003</b></span>
-						<span>待收货</span>
+						<span>订单编号 : <b>{{y.indent_id}}</b></span>
+						<span>{{y.indent_state}}</span>
 					</p>
 					<div class="status-information">
-						<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-						<p>交易时间 : 2016-06-01 12:14</p>
-						<p>发货时间 : 2016-06-02 14:11</p>
-						<p>物流信息 : 顺丰速运 839234733</p>
+						<p>总价 : ¥{{y.indent_money}}（商品金额48.00+运费25.00）</p>
+						<p>交易时间 : {{y.indent_dealTime}}</p>
+						<p>发货时间 : {{y.indent_deliveryTime}}</p>
+						<p>物流信息 : {{y.indent_express}} {{y.indent_expressId}}</p>
 					</div>
 				</div>
-				<div class="status-list">
-					<p class="status-list-top">
-						<span>订单编号 : <b>ZD1039123003</b></span>
-						<span>待收货</span>
-					</p>
-					<div class="status-information">
-						<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-						<p>交易时间 : 2016-06-01 12:14</p>
-					</div>
-				</div>
-				<div class="status-list">
-					<p class="status-list-top">
-						<span>订单编号 : <b>ZD1039123003</b></span>
-						<span>待收货</span>
-					</p>
-					<div class="status-information">
-						<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-						<p>交易时间 : 2016-06-01 12:14</p>
-					</div>
-				</div>
-				<div class="status-list">
-					<p class="status-list-top">
-						<span>订单编号 : <b>ZD1039123003</b></span>
-						<span>待收货</span>
-					</p>
-					<div class="status-information">
-						<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-						<p>交易时间 : 2016-06-01 12:14</p>
-					</div>
-				</div>
-
-				<div class="status-list">
-					<p class="status-list-top">
-						<span>订单编号 : <b>ZD1039123003</b></span>
-						<span>待收货</span>
-					</p>
-					<div class="status-information">
-						<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-						<p>交易时间 : 2016-06-01 12:14</p>
-					</div>
-				</div>
-				<div class="status-list">
-					<p class="status-list-top">
-						<span>订单编号 : <b>ZD1039123003</b></span>
-						<span>待收货</span>
-					</p>
-					<div class="status-information">
-						<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-						<p>交易时间 : 2016-06-01 12:14</p>
-					</div>
-				</div>
-				<!--</div>-->
 				<!--商品订单  end-->
 				<!--优橙订单-->
-				<!--<div class="yc-list-warp">-->
-				<!--<div class="status-list">
-								<p class="status-list-top">
-									<span>订单编号 : <b>ZD1039123003</b></span>
-									<span>待收货</span>
-								</p>
-								<div class="status-information">
-									<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-									<p>交易时间 : 2016-06-01 12:14</p>
-									<p>发货时间 : 2016-06-02 14:11</p>
-									<p>物流信息 : 顺丰速运 839234733</p>
-								</div>
-							</div>-->
-				<!--<div class="status-list">
-								<p class="status-list-top">
-									<span>订单编号 : <b>ZD1039123003</b></span>
-									<span>待收货</span>
-								</p>
-								<div class="status-information">
-									<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-									<p>交易时间 : 2016-06-01 12:14</p>
-								</div>
-							</div>-->
-				<!--<div class="status-list">
-								<p class="status-list-top">
-									<span>订单编号 : <b>ZD1039123003</b></span>
-									<span>待收货</span>
-								</p>
-								<div class="status-information">
-									<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-									<p>交易时间 : 2016-06-01 12:14</p>
-								</div>
-							</div>-->
-				<!--<div class="status-list">
-								<p class="status-list-top">
-									<span>订单编号 : <b>ZD1039123003</b></span>
-									<span>待收货</span>
-								</p>
-								<div class="status-information">
-									<p>总价 : ¥73.00（商品金额48.00+运费25.00）</p>
-									<p>交易时间 : 2016-06-01 12:14</p>
-								</div>
-							</div>-->
-				<!--</div>-->
+				
 				<!--优橙订单  end-->
 			</section>
 		</div>

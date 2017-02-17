@@ -22,14 +22,14 @@ body {
   -webkit-box-orient: horizontal;
   padding: 0 1rem;
 }
-.warp header .my_left {
+.warp header .left {
   display: inline-block;
   width: 1rem;
   height: 3.6rem;
   background: 0;
   line-height: 3.6rem;
 }
-.warp header .my_left img {
+.warp header .left img {
   width: 1rem;
   height: auto;
   background: 0;

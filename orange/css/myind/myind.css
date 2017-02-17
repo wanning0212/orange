@@ -13,6 +13,7 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   background: #f3f3f3;
+  -webkit-box-flex: 1;
 }
 .myind header {
   display: -webkit-box;
@@ -20,109 +21,105 @@ body {
   width: 100%;
   height: 3.6rem;
   background: #f7f7f7;
-  padding: 0.7rem 1rem;
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
 }
 .myind header .status-header-left {
+  display: block;
   width: 0.8rem;
   height: auto;
   background: none;
+  line-height: 3.6rem;
 }
 .myind header .status-header-left > img {
   width: 0.8rem;
   height: 1.4rem;
   background: none;
+  vertical-align: middle;
 }
 .myind header .status-header-mid {
   -webkit-box-flex: 1;
-  width: auto;
-  height: 2rem;
-  background: none;
   text-align: center;
-  line-height: 2rem;
-  border: 1px solid #fac8a2;
-  margin: 0 6rem;
-  color: #fe8e3c;
-  border-radius: 0.4rem;
+  line-height: 3.6rem;
   font-size: 1.4rem;
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
   overflow: hidden;
 }
-.myind header .status-header-mid .goods-status {
-  display: inline-block;
+.myind header .status-header-mid > button {
+  width: 6.8rem;
   height: 2rem;
+  background: none;
+  border: none;
+  outline: none;
+  border: 1px solid #fac7a0;
+  color: #ff7f1d;
+}
+.myind header .status-header-mid .goods-status {
+  margin-right: -0.3rem;
   border-radius: 0.4rem 0 0 0.4rem;
+  border-right: none;
 }
 .myind header .status-header-mid .yc-status {
-  display: inline-block;
+  margin-left: -0.3rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  border-left: none;
 }
 .myind header .status-header-mid .seled {
   background: #ff7f1c;
   color: #fff9f9;
 }
 .myind header .status-header-right {
+  display: block;
   width: 1.6rem;
   height: auto;
   background: none;
+  line-height: 3.6rem;
 }
 .myind header .status-header-right > img {
   width: 1.6rem;
   height: 1.6rem;
   background: none;
+  vertical-align: middle;
 }
-.myind .status-nav {
+.myind .navBox {
   width: 100%;
   height: 4.2rem;
   background: #ffffff;
-  border-bottom: 1px solid #ececec;
-  text-align: center;
+  padding: 0.6rem 0;
   box-sizing: border-box;
-  position: relative;
-  margin-bottom: 2px;
-  font-size: 12px;
-  font-weight: bold;
+  margin-bottom: 0.2rem;
 }
-.myind .status-nav a {
-  display: block;
-  color: #2c2c2c;
-  height: 4.2rem;
-  padding-top: 0.8rem;
+.myind .navBox .nav {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
 }
-.myind .status-nav .selected {
-  color: #fe7513;
-  border-bottom: 2px solid #ecc2a2;
-}
-.myind .status-nav .nav-more {
-  display: block;
-  width: 14%;
-  height: 4.2rem;
-  background: #ffffff;
-  position: relative;
-  left: 86%;
-  bottom: 4.2rem;
-  z-index: 2;
+.myind .navBox .nav .navDl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
   text-align: center;
-  border-left: 1px solid #ddd;
+  -webkit-box-flex: 1;
 }
-.myind .status-nav .nav-more:before,
-.myind .status-nav .nav-more:after {
-  content: '';
-  position: absolute;
-  top: 18px;
-  left: 50%;
-  margin-left: -8px;
-  width: 10px;
-  height: 2px;
-  background-color: #222;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+.myind .navBox .nav .navDl dl {
+  -webkit-box-flex: 1;
+  height: 3.6rem;
+  width: 0;
 }
-.myind .status-nav .nav-more:after {
-  margin-left: -2px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+.myind .navBox .nav .navDl .add {
+  border-bottom: 1px solid red;
+  color: red;
+}
+.myind .navBox .nav .navImg {
+  width: 3.8rem;
+  height: 3rem;
+  background: none;
+  text-align: center;
+  line-height: 3rem;
+  border-left: 1px solid #dcdcdc;
+}
+.myind .navBox .nav .navImg img {
+  width: 1.2rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
 }
 .myind section {
   -webkit-box-flex: 1;

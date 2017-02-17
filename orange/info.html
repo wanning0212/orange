@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-		<title>消息通知</title>
-		<link rel="stylesheet" href="css/info.css" />
-		<script src="js/auto.js"></script>
-	</head>
-	<body>
+<link rel="stylesheet" href="css/info.css" />
 		<div class="info_head">
 			<div class="info_title">
-				<p class="back"><a ui-sref="index" href=""><img src="images/help/h-back.png"/></a></p>
+				<p class="back"><a ui-sref="{{hash}}" href=""><img src="images/help/h-back.png"/></a></p>
 				<h1>消息通知</h1>
 			</div>
 		</div>
 		<div class="my_info">
-			<div class="info_content">
-				<h1 class="info_fl"><img src="images/inform/car.png" alt="" /></h1>
+			<div class="info_content"  ng-repeat="x in infoData">
+				<h1 class="info_fl"><img ng-src="{{x.m_img}}" alt="" /></h1>
 				<div class="info_fr">
-					<p class="info_name">物流消息</p>
-					<span class="info_text">您购买的【商品名称】已发货,请注意查收!</span>
+					<p class="info_name">{{x.m_name}}</p>
+					<span class="info_text">{{x.m_cont}}</span>
 				</div>
-				<div class="info_time">08:22</div>
+				<div class="info_time">{{x.m_date}}</div>
 			</div>
 		</div>
-	</body>
-</html>

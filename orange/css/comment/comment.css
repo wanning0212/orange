@@ -90,11 +90,7 @@ body {
 }
 .warp section {
   -webkit-box-flex: 1;
-  overflow-y: auto;
-
-}
-.warp section::-webkit-scrollbar{
-  width:0
+  overflow: auto;
 }
 .warp section .main1 {
   width: 100%;
