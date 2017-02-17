@@ -1,0 +1,328 @@
+@import url(../reset.css);
+html,
+body,
+.details {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+body {
+  background: #f2f2f2;
+}
+.details {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.details header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 3.6rem;
+}
+.details header .head1 {
+  width: 8.6rem;
+  height: 3.6rem;
+  background: none;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+}
+.details header .head1 img {
+  width: 1rem;
+  height: 1.7rem;
+  background: none;
+}
+.details header .head2 {
+  -webkit-box-flex: 1;
+  font-size: 1.6rem;
+}
+.details header .head2 .detail_ul {
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  font-size: 1.6rem;
+  color: #090909;
+}
+.details header .head2 .detail_ul li {
+  -webkit-box-flex: 1;
+}
+.details header .head2 .detail_ul li:first-child {
+  border-bottom: 1px solid #fc964c;
+}
+.details header .head2 .detail_ul li:first-child a {
+  color: #fc964c;
+}
+.details header .head3 {
+  width: 8.6rem;
+  height: 3.6rem;
+  background: none;
+}
+.details section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: auto;
+}
+.details section::-webkit-scrollbar {
+  width: 0;
+}
+.details section .banner {
+  width: 100%;
+  height: 30rem;
+  background: none;
+  position: relative;
+}
+.details section .banner img {
+  width: 32rem;
+  height: 30rem;
+  background: none;
+}
+.details section .banner .state {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 8.7rem;
+  height: 1.7rem;
+  background: #a5a5a5;
+  text-align: center;
+  line-height: 1.7rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #e8e8e8;
+}
+.details section .banner .state a {
+  color: #e8e8e8;
+}
+.details section .banner .btn {
+  position: absolute;
+  left: 40%;
+  bottom: 2rem;
+  text-align: center;
+}
+.details section .banner .btn li {
+  width: 1rem;
+  height: 1rem;
+  background: #cfcdcd;
+  border-radius: 0.5rem;
+  float: left;
+  margin-left: 1rem;
+}
+.details section .banner .btn .btnColor {
+  background: #FFFFFF;
+}
+.details section .banner .comment {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.8rem;
+}
+.details section .banner .comment a img {
+  width: 1.8rem;
+  height: 1.5rem;
+  background: none;
+}
+.details section .banner .comment span {
+  font-size: 1.6rem;
+  color: #ff540c;
+  margin-left: 0.5rem;
+}
+.details section .print {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  background: white;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+.details section .print .D3 {
+  width: 100%;
+  height: 3rem;
+  background: none;
+  line-height: 3rem;
+}
+.details section .print .D3 h3 {
+  float: left;
+  font-size: 1.6rem;
+  color: #141414;
+}
+.details section .print .D3 span {
+  float: right;
+  font-size: 1.2rem;
+  background: url("../../images/store/crown.png") no-repeat left center;
+  background-size: 2rem 1.6rem;
+  padding-left: 2.5rem;
+  box-sizing: border-box;
+  color: #ff7f1c;
+}
+.details section .print .price {
+  width: 100%;
+  height: 2.8rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 2.8rem;
+}
+.details section .print .price button {
+  width: 5.2rem;
+  height: 1.8rem;
+  background: #ff750a;
+  color: #fdf2fb;
+  text-align: center;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  outline: none;
+  border: none;
+}
+.details section .print .price span {
+  font-size: 1.4rem;
+  color: #ff750a;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+.details section .print .price i {
+  font-size: 1rem;
+  color: #aeaeae;
+}
+.details section .print .postage {
+  width: 100%;
+  height: 2.5rem;
+  background: none;
+}
+.details section .print .postage ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 2.5rem;
+}
+.details section .print .postage ul li {
+  -webkit-box-flex: 1;
+  color: #aeaeae;
+}
+.details section .discuss {
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+  margin-top: 0.4rem;
+  line-height: 3rem;
+}
+.details section .discuss .disCon {
+  width: auto;
+  height: 3rem;
+  background: #ffffff;
+  margin-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid #e7e7e7;
+}
+.details section .discuss .disCon h3 {
+  float: left;
+  font-size: 1.4rem;
+  color: #141414;
+}
+.details section .discuss .disCon a {
+  float: right;
+  padding-top: 0.3rem;
+  box-sizing: border-box;
+}
+.details section .discuss .disCon a img {
+  width: 1rem;
+  height: 1.5rem;
+  background: none;
+}
+.details section .little {
+  width: 100%;
+  height: 6.4rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.details section .little dl {
+  width: auto;
+  height: 6.4rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding-top: 0.6rem;
+  box-sizing: border-box;
+}
+.details section .little dl dt {
+  width: 3.4rem;
+  height: 6.4rem;
+  background: none;
+}
+.details section .little dl dt img {
+  width: 2.2rem;
+  height: 2.2rem;
+  background: none;
+}
+.details section .little dl dd {
+  -webkit-box-flex: 1;
+  font-size: 1rem;
+}
+.details section .little dl dd ul li {
+  line-height: 1.4rem;
+}
+.details section .little dl dd ul .myName.myDate {
+  color: #c3c3c3;
+}
+.details section .little dl dd ul .contents {
+  color: #333333;
+}
+.details section .recommend {
+  width: 100%;
+  height: 11.2rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+}
+.details section .recommend dl {
+  padding-top: 0.8rem;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+}
+.details section .recommend dl dt img {
+  width: 6.4rem;
+  height: 6.4rem;
+  background: none;
+}
+.details section .recommend dl dd .rec3d {
+  font-size: 1.2rem;
+  color: #3b3b3b;
+}
+.details section .recommend dl dd .mony {
+  font-size: 1rem;
+  color: #9d9d9d;
+}
+.details section .recommend dl dd .mony span {
+  color: #f6a264;
+}
+.details footer {
+  width: 100%;
+  height: 4.1rem;
+  background: #ffffff;
+  border-top: 1px solid #dadada;
+}
+.details footer ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  color: #dadada;
+  font-size: 2.8rem;
+  line-height: 3.1rem;
+}
+.details footer ul li {
+  color: #404040;
+  font-size: 1.6rem;
+  -webkit-box-flex: 1;
+}
+.details footer .leftL {
+  background: url("../../images/store/shelves.png") no-repeat 20% center;
+  background-size: 1.6rem 1.6rem;
+}
+.details footer .rightR {
+  background: url("../../images/store/editor.png") no-repeat 20% center;
+  background-size: 1.6rem 1.6rem;
+}
