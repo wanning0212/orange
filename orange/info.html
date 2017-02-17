@@ -14,14 +14,14 @@
 				<h1>消息通知</h1>
 			</div>
 		</div>
-		<div class="my_info">
+		<div class="my_info" ng-repeat="data in massg">
 			<div class="info_content">
 				<h1 class="info_fl"><img src="images/inform/car.png" alt="" /></h1>
-				<div class="info_fr">
-					<p class="info_name">物流消息</p>
-					<span class="info_text">您购买的【商品名称】已发货,请注意查收!</span>
+				<div class="info_fr" >
+					<p class="info_name">{{data.m_name}}</p>
+					<span class="info_text">{{data.m_cont}}</span>
 				</div>
-				<div class="info_time">08:22</div>
+				<div class="info_time">{{data.m_date}}</div>
 			</div>
 		</div>
 	</body>

@@ -10,24 +10,24 @@
 	<body>
 		<div class="reg_warp">
 			<header>
-				<span><img src="images/login/fan.png"/></span>
+				<span ui-sref="login"><img src="images/login/fan.png"/></span>
 				<h2>注册</h2>
 			</header>
 			<section>
 				<div class="form">
-					<input type="text" placeholder="请输入用户名"/>
+					<input type="text" ng-model="users"  placeholder="请输入用户名"/>
 				</div>
 				<div class="form">
-					<input type="text" placeholder="请输入密码"/>
+					<input type="text" ng-model="pwd" placeholder="请输入密码"/>
 				</div>
 				<div class="form">
-					<input type="text" placeholder="请输入手机号"/>
+					<input type="text" ng-model="tel" placeholder="请输入手机号"/>
 				</div>
 				<div class="form">
 					<input type="text" placeholder="请输入验证码"/>
 				</div>
 				<div class="btn">
-				<button>注册</button>
+				<button ng-click="mass()">注册</button>
 			</div>
 			</section>
 		</div>

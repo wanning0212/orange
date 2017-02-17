@@ -39,6 +39,7 @@
 	width: 4rem;
 	height: auto;
 	vertical-align: middle;
+
 }
 .info_fr{
 	-webkit-box-flex: 1;
@@ -50,9 +51,17 @@
 	padding-top: 0.8rem;
 	font-size: 1.4rem;
 }
+.info_text{
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
 .info_text,.info_time{
 	font-size: 1rem;
-	color:#9c9c9c
+	color:#9c9c9c;
+
 }
 .info_time{
 	line-height: 6rem;
