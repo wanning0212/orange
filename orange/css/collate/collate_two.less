@@ -1,0 +1,25 @@
+@import url(../reset.css);
+.whb(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir; //horizontal
+}
+
+section{
+    -webkit-box-flex: 1;
+    overflow: auto;
+    .collate_two_main{
+        margin-top: 0.5rem;
+        .whb(100%,17.1rem,#fff);
+        h3{
+            line-height: 2.6rem;
+        }
+        img{
+            .whb(100%,14.5rem,0);
+        }
+    }
+}

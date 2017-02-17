@@ -1,0 +1,65 @@
+@import url(../reset.css);
+.whb(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir; //horizontal
+}
+.a{
+    position: absolute;
+}
+.collate_three_form{
+    margin-top: 0.2rem;
+    .whb(100%,3.3rem,#fff);
+    border-bottom: 1px solid #f3f3f3;
+    padding: 0 1rem;
+    padding-top: 0.4rem;
+    box-sizing: border-box;
+    
+    .collate_three_txt{
+        padding-left: 3rem;
+        border: none;
+        width: 100%;
+        background: #e4e4e4;
+        border-radius: 0.5rem;
+        height: 2.6rem;
+    }
+}
+section{
+    -webkit-box-flex: 1;
+    overflow: auto;
+    .collate_three_main{
+        .whb(100%,7.6rem,#fff);
+        margin-bottom: 0.4rem;
+            padding:0 1rem;
+            padding-top: 0.7rem;
+            box-sizing: border-box;
+            dl{
+                .box(horizontal);
+                dt{
+                    .whb(6.4rem,auto,0);
+                
+                    img{
+                        .whb(6.4rem,auto,0);
+                    }
+                }
+                dd{
+                    -webkit-box-flex: 1;
+                    padding-left: 1rem;
+                    p{
+                      &:nth-child(2){
+                         padding-top: 2rem;
+                         padding-bottom: 0.4rem;
+                          color: #ff7f1c;
+                          font-size: 1.6rem;
+                          box-sizing: border-box;
+                          float: right;
+                      }   
+                    }
+                }
+            }
+    }
+}

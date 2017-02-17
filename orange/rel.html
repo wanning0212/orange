@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/fans/fans.css" />
+    <link rel="stylesheet" href="css/cover.css"/>
+    <script type="text/javascript" src="js/auto.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+</head>
+<body>
+<div class="fans">
+    <header>
+        <div class="head1"><a href="javascript:hBack()"><img src="images/myind/h-back.png" alt="" /></a></div>
+        <div class="head2">关联文档</div>
+        <div class="head3"><a href="#"></a></div>
+    </header>
+    <section>
+        <div class="SYB">创业相框.stl</div>
+        <div class="SYB">创业相框.stl</div>
+        <div class="relevance">
+            <button class="cunS">不关联文档</button>
+        </div>
+    </section>
+    <footer></footer>
+</div>
+<div class="cover"></div>
+<div class="info_frame">
+    <div class="confirm">
+        提示若不关联设计原件的弊端
+    </div>
+    <div class="btn">
+        <button class="yes">我知道了</button>
+    </div>
+</div>
+</body>
+<script>
+    //    返回显示遮罩层
+    function hBack(){
+        $(".cover,.info_frame").show();
+    }
+    //     点击确定返回当前页面
+    $(".yes").click(function(){
+        window.history.go(-1);location.reload();
+    });
+
+</script>
+</html>
