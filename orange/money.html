@@ -10,33 +10,25 @@
 <body>
 <div class="two">
     <header>
-        <div class="head1"><a ui-sref="index" href="#"><img src="images/help/h-back.png" alt="" /></a></div>
+        <div class="head1"><a ui-sref="index" href="#"><img src="images/caiwu/myqianbao/fan.png" alt="" /></a></div>
         <div class="head2">优橙钱包</div>
-        <div class="head3"><a ng-click="back()"  href="#"><img src="images/help/inform.png" alt="" /></a></div>
+        <div class="head3"><a ui-sref="info"  href="#"><img src="images/caiwu/myqianbao/head_right.png" alt="" /></a></div>
     </header>
-    <section>
+    <section ng-controller="myselect">
         <div class="money_main1">
-            <a href="#" class="money_right"><img src="images/caiwu/myqianbao/search.png"></a>
+            <div class="money_right" ui-sref="select">
+            	<img src="images/caiwu/myqianbao/search.png">
+            </div>
             <ul>
                 <li>账户余额（元）</li>
                 <li>536.00</li>
                 <li>（冻结金额230.00）</li>
                 <li>申请但未完成的体现金额被冻结，详情请点击<span>“分类查询”</span></li>
-                <li><a href="#"><img src="images/caiwu/myqianbao/chong.png"/></a></li>
+                <li><a href="#" class="money_img" ui-sref="top-up"><img src="images/caiwu/myqianbao/chong.png"/></a><a href="#" ui-sref="deposit"><img src="images/caiwu/myqianbao/ti.png"/></a></li>
             </ul>
         </div>
         <div class="select_data">
             <dl class="select_fl">
-                <dt>销售管理:<span class="clo">-230.00元</span></dt>
-                <dd>交易记录:<span>2016-06-16</span></dd>
-            </dl>
-            <dl class="select_fr">
-                <dt>订单编号:DKFAOD000000011</dt>
-                <dd>已完成</dd>
-            </dl>
-        </div>
-        <div class="select_data">
-            <dl class="select_fl">
                 <dt>销售管理:<span class="clo2">-230.00元</span></dt>
                 <dd>交易记录:<span>2016-06-16</span></dd>
             </dl>
@@ -45,44 +37,14 @@
                 <dd>已完成</dd>
             </dl>
         </div>
-        <div class="select_data">
+        <div class="select_data" ng-repeat="x in select">
             <dl class="select_fl">
-                <dt>销售管理:<span class="clo2">-230.00元</span></dt>
-                <dd>交易记录:<span>2016-06-16</span></dd>
+                <dt>销售管理:<span class="clo">{{x.record_amount}}元</span></dt>
+                <dd>交易记录:<span>{{x.colock}}</span></dd>
             </dl>
             <dl class="select_fr">
-                <dt>订单编号:DKFAOD000000011</dt>
-                <dd>已完成</dd>
-            </dl>
-        </div>
-        <div class="select_data">
-            <dl class="select_fl">
-                <dt>销售管理:<span class="clo">-230.00元</span></dt>
-                <dd>交易记录:<span>2016-06-16</span></dd>
-            </dl>
-            <dl class="select_fr">
-                <dt>订单编号:DKFAOD000000011</dt>
-                <dd>已完成</dd>
-            </dl>
-        </div>
-        <div class="select_data">
-            <dl class="select_fl">
-                <dt>销售管理:<span class="clo">-230.00元</span></dt>
-                <dd>交易记录:<span>2016-06-16</span></dd>
-            </dl>
-            <dl class="select_fr">
-                <dt>订单编号:DKFAOD000000011</dt>
-                <dd>已完成</dd>
-            </dl>
-        </div>
-        <div class="select_data">
-            <dl class="select_fl">
-                <dt>销售管理:<span class="clo2">-230.00元</span></dt>
-                <dd>交易记录:<span>2016-06-16</span></dd>
-            </dl>
-            <dl class="select_fr">
-                <dt>订单编号:DKFAOD000000011</dt>
-                <dd>已完成</dd>
+                <dt>订单编号:{{x.record_numbers}}</dt>
+                <dd>{{x.record_state}}</dd>
             </dl>
         </div>
 

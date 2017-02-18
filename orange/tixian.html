@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>提现申请</title>
+    <link rel="stylesheet" type="text/css" href="css/card/card.css" />
+    <script type="text/javascript" src="js/auto.js"></script>
+</head>
+<body>
+<div class="card">
+    <header>
+        <div class="head1"><a  ng-click="isShow=!isShow;isHide=!isHide" href="#"><img src="images/help/h-back.png" alt="" /></a></div>
+        <div class="head2">提现申请</div>
+        <div class="head3"><a ng-click="back()"><img src="images/help/inform.png" alt="" /></a></div>
+    </header>
+    <section>
+        <div class="tixia_main">
+            <span>提现到支付宝：</span><input type="text" placeholder="13480548386"/>
+        </div>
+        <div class="tixia_main mainXX">
+            <span class="cardXX">提现金额：￥</span><input type="text" class="inp" placeholder="最多可提现￥500"/>
+        </div>
+        <div class="save">
+            <button class="cunS" ui-sref="money">提交</button>
+        </div>
+    </section>
+    <footer></footer>
+</div>
+</body>
+</html>

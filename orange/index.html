@@ -48,7 +48,7 @@
 								</div>
 								<div class="bottom1">
 									<a href="#">
-										<dl>
+										<dl ui-sref="goods">
 											<dt><img src="images/home/shangping.png"/></dt>
 											<dd>
 												<p>上架商品</p><span>86</span></dd>
@@ -100,7 +100,7 @@
 						<div class="main2">
 							<div class="main2_top">
 								<div class="m2_left"><img src="images/home/dui.png" /></div>
-								<h3>消息箱<span>(39)</span></h3>
+								<h3>消息箱<span>({{num}})</span></h3>
 								<div class="m2_right"><a ng-click="back()" href=""><img src="images/home/rig.png" /></a></div>
 							</div>
 							<div class="info_content"  ng-repeat="x in infoData">

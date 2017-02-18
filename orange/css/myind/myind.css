@@ -23,6 +23,7 @@ body {
   background: #f7f7f7;
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
+  padding: 0 1rem;
 }
 .myind header .status-header-left {
   display: block;

@@ -2,7 +2,6 @@
  * Created by Administrator on 2017/2/16.
  */
 app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
-    // $urlRouterProvider.otherwise("index");
     $stateProvider
         //优橙协助
         .state("help",{
@@ -11,7 +10,6 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 "body":{
                     templateUrl:"help.html",
                     constroller:"myBody"
-
                 }
             }
         })
@@ -119,5 +117,133 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                     controller: "myBody"
                 }
             }
+        })
+        .state("myind",{
+            url:"myind",
+            views:{
+                "body.content":{
+                    templateUrl:"myind.html",
+                    controller: "myind"
+                }
+            }
+        })
+        .state("fans",{
+            url:"fans",
+            views:{
+                "body":{
+                    templateUrl:"fans.html",
+                    controller: "myfans"
+                }
+            }
+        })
+        .state("select",{
+            url:"select",
+            views:{
+                "body":{
+                    templateUrl:"select.html",
+                    controller: "myselect"
+                }
+            }
+        })
+        .state("personal",{
+            url:"personal",
+            views:{
+                "body":{
+                    templateUrl:"shops and personal.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("release",{
+            url:"release",
+            views:{
+                "body":{
+                    templateUrl:"release.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("money",{
+            url:"money",
+            views:{
+                "body":{
+                    templateUrl:"money.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("top-up",{
+            url:"top-up",
+            views:{
+                "body":{
+                    templateUrl:"top-up.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("tixian",{
+            url:"tixian",
+            views:{
+                "body":{
+                    templateUrl:"tixian.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("card",{
+            url:"card",
+            views:{
+                "body":{
+                    templateUrl:"card.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("deposit",{
+            url:"deposit",
+            views:{
+                "body":{
+                    templateUrl:"deposit.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("collate",{
+            url:"collate",
+            views:{
+                "body":{
+                    templateUrl:"collate.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("collate_two",{
+            url:"collate_two",
+            views:{
+                "body":{
+                    templateUrl:"collate_two.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("collate_three",{
+            url:"collate_three",
+            views:{
+                "body":{
+                    templateUrl:"collate_three.html",
+                    controller: "myBody"
+                }
+            }
+        })
+        .state("goods",{
+            url:"goods",
+            views:{
+                "body":{
+                    templateUrl:"goods.html",
+                    controller: "myBody"
+                }
+            }
         });
+    // $urlRouterProvider.otherwise("index");
+
 }]);

@@ -13,7 +13,7 @@
 <body>
     <div class="Modify">
         <header>
-            <div class="head1"><a  ng-click="isShow=!isShow;isHide=!isHide" href="#"><img src="images/help/h-back.png" alt="" /></a></div>
+            <div class="head1"><a  ng-click="isShow=!isShow" href="#"><img src="images/help/h-back.png" alt="" /></a></div>
             <div class="head2">收货人信息</div>
             <div class="head3"></div>
         </header>
@@ -26,34 +26,35 @@
                 <span>手机号：</span><input type="text" placeholder="189-1231-3689"/>
             </div>
             <div class="two_main">
-                <span>所在地区：</span><input type="text" placeholder="北京、海淀"/> <a ng-click="isShow=!isShow;isClick=!isClick" href="javascript:;"><img src="images/help/right-arrow.png" alt=""/></a>
+                <span>所在地区：</span><input type="text" placeholder="北京、海淀"/> <a ng-click="isHide=!isHide" href="javascript:;"><img src="images/help/right-arrow.png" alt=""/></a>
             </div>
             <div class="two_main">
                 <span>具体地址：</span><input type="text" placeholder="XX路、XX楼"/>
             </div>
             <!--<div class="two_main"></div>-->
             <div class="save">
-               <button class="cunS">保存修改</button>
+               <button class="cunS" ui-sref="help">保存修改</button>
             </div>
         </section>
     </div>
     <div class="cover" ng-hide="isShow"></div>
-    <div class="info_frame" ng-hide="isHide">
+    <div class="cover" ng-hide="isHide"></div>
+    <div class="info_frame" ng-hide="isShow">
         <div class="confirm">
             <p class="que">确定返回</p>
             <p class="mass">你填写的信息尚未保存，确定返回吗？</p>
         </div>
         <div class="btn">
             <ul>
-                <li class="sss"><button class="no" ng-click="isShow=!isShow;isHide=!isHide">取消</button></li>
+                <li class="sss"><button class="no" ng-click="isShow=!isShow">取消</button></li>
                 <li><button class="yes" ng-click="hack()">确定</button></li>
             </ul>
         </div>
     </div>
-        <div class="info_address" ng-hide="isClick">
+        <div class="info_address" ng-hide="isHide">
             <div class="task">
-                <a href="javascript:;" ng-click="isShow=!isShow;isClick=!isClick" class="deselect">取消</a>
-                <a href="javascript:;" ng-click="isShow=!isShow;isClick=!isClick" class="accomplish">完成</a>
+                <a href="javascript:;" ng-click="isHide=!isHide" class="deselect">取消</a>
+                <a href="javascript:;" ng-click="isHide=!isHide" class="accomplish">完成</a>
             </div>
             <div class="diz">
                 <div class="resd">

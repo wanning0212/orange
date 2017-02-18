@@ -10,11 +10,11 @@
 	<body>
 		<div class="warp">
 			<header>
-				<a class="sap-header-left" href="javascript:;" onclick="history.back(-1);">
+				<a class="sap-header-left" href="javascript:;" ui-sref="myinf">
 					<img src="images/shop/massage/info/left.png" />
 				</a>
 				<h1 class="sap-header-title">店铺与个人信息</h1>
-				<a class="sap-header-right" href="#"><img src="images/shop/massage/info/xinxie.png"/></a>
+				<a class="sap-header-right" ng-click="back()" href="#"><img src="images/shop/massage/info/xinxie.png"/></a>
 			</header>
 			<!--<div class="banner-bg"><img src="images/shop/massage/info/banner.png"/></div>-->
 			<section>
@@ -142,7 +142,7 @@
 							<p><i class="addressee-human">杨阳</i><i class="addressee-number">12345678912</i></p>
 							<p>北京市海淀区XXX路XXX号3-3-333</p>
 						</div>
-						<a href="#" class="addressee-right"><img src="images/shop/massage/info/right.png"/></a>
+						<a href="#" ui-sref="Modify" class="addressee-right"><img src="images/shop/massage/info/right.png"/></a>
 					</div>
 				</div>
 				<!--默认收件信息  end-->

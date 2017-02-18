@@ -11,11 +11,11 @@
 	</head>
 
 	<body>
-		<div class="warp">
+		<div class="warp" ng-controller="myCom">
 			<header>
 				<a class="left" ui-sref="index" href=""><img src="images/caiwu/fan.png" /></a>
 				<h2>评论管理</h2>
-				<a class="right" ui-sref="info"  href="#"><img src="images/caiwu/dui.png" /></a>
+				<a class="right"  ng-click="back()"  href="#"><img src="images/caiwu/dui.png" /></a>
 			</header>
 			<nav>
 				<ul>
@@ -25,45 +25,20 @@
 				</ul>
 			</nav>
 			<section>
-				<div class="main1">
-					<h2>3D打印的陶瓷</h2>
+				<div class="main1" ng-repeat="x in comment">
+					<h2>{{x.comment_type}}</h2>
 					<ul>
-						<li>订单编号：<b>DSFSD012389143</b></li>
-						<li>用户ID：<b>顺风耳</b></li>
-						<li>交易时间：<b>2016-06-01 12:14</b></li>
-						<li>交易时间：<b>2016-06-01 12:14</b></li>
+						<li>订单编号：<b>{{x.order_num}}</b></li>
+						<li>用户ID：<b>{{x.users_id}}</b></li>
+						<li>交易时间：<b>{{x.trade_time}}</b></li>
+						<li>交易时间：<b>{{x.trade_times}}</b></li>
 					</ul>
-					<p>Formlabs发布该产品的原因很简单、直接。目前低端3D打印机都无法满足职业设计师的质量标准。发布该产品的原因很简单直接：目前就多久多久基督教大家的</p>
+					<p>{{x.comment_contents}}</p>
 					<a href="#" class="bottom">
 						<span class="huifu">回复评论</span>
 					</a>
 				</div>
-				<div class="main1">
-					<h2>3D打印的陶瓷</h2>
-					<ul>
-						<li>订单编号：<b>DSFSD012389143</b></li>
-						<li>用户ID：<b>顺风耳</b></li>
-						<li>交易时间：<b>2016-06-01 12:14</b></li>
-						<li>交易时间：<b>2016-06-01 12:14</b></li>
-					</ul>
-					<p>Formlabs发布该产品的原因很简单、直接。目前低端3D打印机都无法满足职业设计师的质量标准。发布该产品的原因很简单直接：目前就多久多久基督教大家的</p>
-					<a href="#" class="bottom">
-						<span class="huifu">回复评论</span>
-					</a>
-				</div>
-				 <div class="main1">
-					<h2>3D打印的陶瓷</h2>
-					<ul>
-						<li>订单编号：<b>DSFSD012389143</b></li>
-						<li>用户ID：<b>顺风耳</b></li>
-						<li>交易时间：<b>2016-06-01 12:14</b></li>
-						<li>交易时间：<b>2016-06-01 12:14</b></li>
-					</ul>
-					<p>Formlabs发布该产品的原因很简单、直接。目前低端3D打印机都无法满足职业设计师的质量标准。发布该产品的原因很简单直接：目前就多久多久基督教大家的</p>
-					<a href="#" class="bottom">
-						<span class="huifu">回复评论</span>
-					</a>
-				</div>
+
 			</section>
 
 		</div>

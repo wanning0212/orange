@@ -1,0 +1,232 @@
+@import url(../reset.css);
+html,
+body,
+.card {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+body {
+  background: #f2f2f2;
+}
+.card {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.card header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 3.6rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+.card header .head1 {
+  width: 2rem;
+  height: 3.6rem;
+  background: none;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+}
+.card header .head1 img {
+  width: 1rem;
+  height: 1.7rem;
+  background: none;
+}
+.card header .head2 {
+  -webkit-box-flex: 1;
+  font-size: 1.6rem;
+}
+.card header .head3 {
+  width: 2rem;
+  height: 3.6rem;
+  background: none;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+}
+.card header .head3 img {
+  width: 1.8rem;
+  height: 1.7rem;
+  background: none;
+}
+.card section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: auto;
+}
+.card section::-webkit-scrollbar {
+  width: 0;
+}
+.card section .order {
+  width: 100%;
+  height: 6.3rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  margin: 0.4rem 0;
+  box-sizing: border-box;
+}
+.card section .order p {
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #7d7d7d;
+}
+.card section .order p .orderMoney {
+  color: #ff7d1e;
+}
+.card section .payment {
+  width: 100%;
+  height: 2.5rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  color: #b4b4b4;
+  margin-bottom: 0.2rem;
+}
+.card section .payment span {
+  color: #3d3d3d;
+}
+.card section .cardMain {
+  width: 100%;
+  height: 2.5rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #b4b4b4;
+  margin-bottom: 0.2rem;
+}
+.card section .cardMain .cardImg {
+  float: left;
+  color: #3d3d3d;
+  background: url("../../images/caiwu/pingtaichongzhi2/zhi.png") no-repeat left center;
+  background-size: 2.2rem 2.2rem;
+  padding-left: 2.5rem;
+}
+.card section .cardMain .cardImg1 {
+  float: left;
+  color: #3d3d3d;
+  background: url("../../images/caiwu/pingtaichongzhi2/wei.png") no-repeat left center;
+  background-size: 2.2rem 2.2rem;
+  padding-left: 2.5rem;
+}
+.card section .cardMain em {
+  float: right;
+  padding-top: 0.1rem;
+  box-sizing: border-box;
+}
+.card section .cardMain em .bb {
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: none;
+  border: 1px solid #bebebe;
+  border-radius: 1.1rem;
+  background: url("../../images/caiwu/pingtaichongzhi2/yes.png") no-repeat center;
+  background-size: 2.2rem 2.2rem;
+}
+.card section .cardMain em .bb1 {
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: none;
+  border: 1px solid #bebebe;
+  border-radius: 1.1rem;
+}
+.card section .save {
+  width: 100%;
+  height: 2.5rem;
+  background: none;
+  margin-top: 2.5rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.card section .save button {
+  width: 100%;
+  height: 2.5rem;
+  background: #ff7f1c;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  line-height: 2.5rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+}
+.card section .tixia_main {
+  width: 100%;
+  height: 2.5rem;
+  background: none;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #b4b4b4;
+  border-bottom: 2px solid #dfdfdf;
+}
+.card section .tixia_main span {
+  color: #b8b8b8;
+}
+.card section .tixia_main .cardXX {
+  color: #545454;
+}
+.card section .tixia_main input {
+  outline: none;
+  border: none;
+  background: #f2f2f2;
+  min-width: 10rem;
+}
+.card section .tixia_main .inp {
+  background: white;
+}
+.card section .mainXX {
+  background: white;
+  height: 3rem;
+  line-height: 3rem;
+}
+.card section .account {
+  width: 100%;
+  height: 2.5rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.card section .account .accB {
+  float: left;
+  color: #0f0f0f;
+}
+.card section .account .accD {
+  float: right;
+  color: #6f6f6f;
+}
+.card section .busMain {
+  width: 100%;
+  height: 15.5rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+.card section .busMain p {
+  -webkit-box-flex: 1;
+  font-size: 1rem;
+  color: #6f6f6f;
+}
+.card section .busMain p .busLeft {
+  float: left;
+}
+.card section .busMain p .busRight {
+  float: right;
+}
