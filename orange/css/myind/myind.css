@@ -33,8 +33,8 @@ body {
   line-height: 3.6rem;
 }
 .myind header .status-header-left > img {
-  width: 0.8rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: auto;
   background: none;
   vertical-align: middle;
 }
@@ -49,7 +49,6 @@ body {
   width: 6.8rem;
   height: 2rem;
   background: none;
-  border: none;
   outline: none;
   border: 1px solid #fac7a0;
   color: #ff7f1d;
@@ -70,14 +69,14 @@ body {
 }
 .myind header .status-header-right {
   display: block;
-  width: 1.6rem;
+  width: 1.8rem;
   height: auto;
   background: none;
   line-height: 3.6rem;
 }
 .myind header .status-header-right > img {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.8rem;
+  height: auto;
   background: none;
   vertical-align: middle;
 }
