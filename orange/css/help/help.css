@@ -55,10 +55,15 @@ body {
   height: 0.3rem;
   background: #e3e3e3;
 }
+.two section::-webkit-scrollbar{
+  width: 0;
+}
 .two section {
+  overflow-y:auto;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-flex: 1;
+  position: relative;
   font-size: 1.2rem;
   color: #757575;
 }

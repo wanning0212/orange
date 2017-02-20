@@ -8,6 +8,7 @@
 		<script type="text/javascript" src="js/auto.js"></script>
 		<script src="js/angular-1.4.6.js"></script>
 		<script src="js/angular-ui-router.js"></script>
+		<script src="js/iscroll2.js"></script>
 	</head>
 	<body ui-view="body" ng-controller="myBody">
 		<div class="warp">
@@ -19,99 +20,99 @@
 						<h2>优橙设计师移动工作平台</h2>
 					</header>
 					<section>
-						<div class="info">
-							<div class="left">
-								<dl>
-									<dt><img src="images/home/head.png"/></dt>
-									<dd>Lilili</dd>
-								</dl>
-							</div>
-							<ul class="center">
-								<li>北京某某时尚点点<img src="images/home/qiany.png" /></li>
-								<li>店铺状态：<span>停业</span></li>
-							</ul>
-							<div class="right">
-								<a ui-sref="login" href=""><img src="images/home/rig.png" /></a>
-							</div>
-						</div>
-						<div class="main1">
-							<div class="top">开始工作 Start-up</div>
-							<div class="bottom">
-								<div class="bottom1">
-									<a href="#">
-										<dl ui-sref="fans">
-											<dt><img src="images/home/fs.png"/></dt>
-											<dd>
-												<p>粉丝</p><span>120</span></dd>
-										</dl>
-									</a>
+							<div class="info">
+								<div class="left">
+									<dl>
+										<dt><img src="images/home/head.png"/></dt>
+										<dd>Lilili</dd>
+									</dl>
 								</div>
-								<div class="bottom1">
-									<a href="#">
-										<dl ui-sref="goods">
-											<dt><img src="images/home/shangping.png"/></dt>
-											<dd>
-												<p>上架商品</p><span>86</span></dd>
-										</dl>
-									</a>
+								<ul class="center">
+									<li>北京某某时尚点点<img src="images/home/qiany.png" /></li>
+									<li>店铺状态：<span>停业</span></li>
+								</ul>
+								<div class="right">
+									<a ui-sref="login" href=""><img src="images/home/rig.png" /></a>
 								</div>
 							</div>
-							<div class="bottom">
-								<div class="bottom1">
-									<a href="#">
-										<dl>
-											<dt><img src="images/home/kc.png"/></dt>
-											<dd>
-												<p>库存商品</p><span>115</span></dd>
-										</dl>
-									</a>
+							<div class="main1">
+								<div class="top">开始工作 Start-up</div>
+								<div class="bottom">
+									<div class="bottom1">
+										<a href="#">
+											<dl ui-sref="fans">
+												<dt><img src="images/home/fs.png"/></dt>
+												<dd>
+													<p>粉丝</p><span>120</span></dd>
+											</dl>
+										</a>
+									</div>
+									<div class="bottom1">
+										<a href="#">
+											<dl ui-sref="goods">
+												<dt><img src="images/home/shangping.png"/></dt>
+												<dd>
+													<p>上架商品</p><span>86</span></dd>
+											</dl>
+										</a>
+									</div>
 								</div>
-								<div class="bottom1">
-									<a href="#">
-										<dl>
-											<dt><img src="images/home/cgx.png"/></dt>
-											<dd>
-												<p>草稿箱</p><span>15</span></dd>
-										</dl>
-									</a>
+								<div class="bottom">
+									<div class="bottom1">
+										<a href="#">
+											<dl>
+												<dt><img src="images/home/kc.png"/></dt>
+												<dd>
+													<p>库存商品</p><span>115</span></dd>
+											</dl>
+										</a>
+									</div>
+									<div class="bottom1">
+										<a href="#">
+											<dl>
+												<dt><img src="images/home/cgx.png"/></dt>
+												<dd>
+													<p>草稿箱</p><span>15</span></dd>
+											</dl>
+										</a>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="bottom1">
+										<a ui-sref="fzb" href="#">
+											<dl>
+												<dt><img src="images/home/cw.png"/></dt>
+												<dd>
+													<p>财务管理</p><span>115</span></dd>
+											</dl>
+										</a>
+									</div>
+									<div class="bottom1">
+										<a ui-sref="comment" href="">
+											<dl>
+												<dt><img src="images/home/pl.png"/></dt>
+												<dd>
+													<p>评论管理</p><span>及时回复客户</span></dd>
+											</dl>
+										</a>
+									</div>
 								</div>
 							</div>
-							<div class="bottom">
-								<div class="bottom1">
-									<a ui-sref="fzb" href="#">
-										<dl>
-											<dt><img src="images/home/cw.png"/></dt>
-											<dd>
-												<p>财务管理</p><span>115</span></dd>
-										</dl>
-									</a>
+							<div class="main2">
+								<div class="main2_top">
+									<div class="m2_left"><img src="images/home/dui.png" /></div>
+									<h3>消息箱<span>({{num}})</span></h3>
+									<div class="m2_right"><a ng-click="back()" href=""><img src="images/home/rig.png" /></a></div>
 								</div>
-								<div class="bottom1">
-									<a ui-sref="comment" href="">
-										<dl>
-											<dt><img src="images/home/pl.png"/></dt>
-											<dd>
-												<p>评论管理</p><span>及时回复客户</span></dd>
-										</dl>
-									</a>
+								<div class="info_content"  ng-repeat="x in infoData">
+									<h1 class="info_fl"><img ng-src="{{x.m_img}}" alt="" /></h1>
+									<div class="info_fr">
+										<p class="info_name">{{x.m_name}}</p>
+										<span class="info_text">{{x.m_cont}}</span>
+									</div>
+									<div class="info_time">{{x.m_date}}</div>
 								</div>
 							</div>
-						</div>
-						<div class="main2">
-							<div class="main2_top">
-								<div class="m2_left"><img src="images/home/dui.png" /></div>
-								<h3>消息箱<span>({{num}})</span></h3>
-								<div class="m2_right"><a ng-click="back()" href=""><img src="images/home/rig.png" /></a></div>
-							</div>
-							<div class="info_content"  ng-repeat="x in infoData">
-								<h1 class="info_fl"><img ng-src="{{x.m_img}}" alt="" /></h1>
-								<div class="info_fr">
-									<p class="info_name">{{x.m_name}}</p>
-									<span class="info_text">{{x.m_cont}}</span>
-								</div>
-								<div class="info_time">{{x.m_date}}</div>
-							</div>
-						</div>
 					</section>
 			</div>
 			<footer>
