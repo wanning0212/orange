@@ -183,12 +183,11 @@ body {
   width: 100%;
   height: 18rem;
   background: #fff;
-  /*display: none;*/
 }
 .info_address .task {
   width: 100%;
   height: 3rem;
-  /*background: none;*/
+  background: none;
   background: linear-gradient(to bottom, #e8e8e8, #f2f2f2);
   padding: 0 1rem;
   box-sizing: border-box;
