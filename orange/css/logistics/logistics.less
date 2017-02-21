@@ -1,0 +1,115 @@
+@import url(../reset.css);
+.whb(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir; //horizontal
+}
+html,
+body,
+.logistics-warp {
+    .whb(100%,100%,#f2f2f2);
+}
+.logistics-warp{
+    .box;
+    header{
+        .whb(100%,3.6rem,#f7f7f7);
+        .box(horizontal);
+        line-height: 3.6rem;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid #dfdfdf;
+        margin-bottom: 0.4rem;
+        .logistics-header-left {
+            display: block;
+            .whb(1rem,3.6rem,none);
+            &>img {
+                .whb(1rem,auto,none);
+                vertical-align: middle;
+            }
+        }
+        .logistics-header-title {
+            -webkit-box-flex: 1;
+            text-align: center;
+            font-size: 14px;
+        }
+        .logistics-header-right {
+            display: block;
+            .whb(auto,3.6rem,none);
+            color: #343434;
+            font-size: 16px;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        .logistics-ordnum{
+            .whb(100%,2.6rem,#fff);
+            padding: 0 1rem;
+            margin-bottom: 0.4rem;
+            .box(horizontal);
+            &>span{
+                font-size: 12px;
+                color: #2b2b2b;
+                line-height: 2.6rem;
+            }
+            .order-box{
+                -webkit-box-flex: 1;
+                .whb(100%,2.6rem,none);
+                margin-left: 0.4rem;
+                &>input{
+                    .whb(100%,2.6rem,none);
+                    border: none;
+                }
+            }
+        }
+        
+        .logistics-company{
+            .whb(100%,2.6rem,#fff);
+            padding: 0 0.9rem;
+            .box(horizontal);
+            line-height: 2.6rem;
+            font-size: 12px;
+            color: #2b2b2b;
+            border-bottom: 1px solid #fafafa;
+            position: relative;
+            &>span{
+                display: block;
+                .whb(1rem,1rem,none);
+                border-left: 2px solid #a6a6a6;
+                border-bottom: 2px solid #a6a6a6;
+                transform: rotate(-135deg);
+                position: absolute;
+                top: 6px;
+                right: 1.2rem;
+            }
+        }
+        //
+        .logistics-company-list{
+            .whb(100%,auto,none);
+            .company-list{
+                .whb(100%,2.6rem,#fff);
+                padding: 0 1.4rem;
+                .box(horizontal);
+                line-height: 2.6rem;
+                font-size: 12px;
+                color: #2b2b2b;
+                border-bottom: 1px solid #fafafa;
+//              position: relative;
+//              &>span{
+//                  display: block;
+//                  .whb(1.4rem,1.4rem,none);
+//                  border-left: 2px solid #a6a6a6;
+//                  border-bottom: 2px solid #a6a6a6;
+//                  transform: rotate(-135deg);
+//                  position: absolute;
+//                  top: 6px;
+//                  right: 1.2rem;
+//              }
+                
+            }
+        }
+    }
+}

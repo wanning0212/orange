@@ -1,0 +1,166 @@
+@import url(../../reset.css);
+html,
+body,
+.help-details {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+body {
+  background: #f2f2f2;
+}
+.help-details {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.help-details .details-head {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #bfbfbf;
+  padding: 0 1rem;
+}
+.help-details .details-head div {
+  line-height: 3.6rem;
+}
+.help-details .details-head div img {
+  width: auto;
+  height: 1.5rem;
+  background: 0;
+  vertical-align: middle;
+}
+.help-details .details-head h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 3.6rem;
+  font-size: 1.4rem;
+}
+.help-details .details-people {
+  width: 100%;
+  height: 4.4rem;
+  background: #ffffff;
+}
+.help-details .details-people dl {
+  padding: 0.5rem 1.3rem 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.help-details .details-people dl img {
+  width: auto;
+  height: 1.3rem;
+  background: 0;
+}
+.help-details .details-people dl dd {
+  padding-left: 0.8rem;
+  box-sizing: border-box;
+}
+.help-details .details-people dl dd span {
+  padding-right: 1.4rem;
+}
+.help-details .details-sec {
+  -webkit-box-flex: 1;
+  overflow: auto;
+  margin-top: 0.4rem;
+}
+.help-details .details-sec ul {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  background: #fff;
+}
+.help-details .details-sec ul li {
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 3rem;
+}
+.help-details .details-sec ul li b {
+  display: inline-block;
+}
+.help-details .details-sec ul li:nth-child(1) span:nth-child(2) {
+  padding-left: 1.5rem;
+}
+.help-details .details-sec div {
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+}
+.help-details .details-sec div p {
+  line-height: 3rem;
+  color: #000;
+}
+.help-details .details-sec div .details-img {
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+.help-details .details-sec div .details-img img {
+  padding-right: 1.1rem;
+  padding-top: 0.8rem;
+  box-sizing: border-box;
+}
+.help-details .details-sec p {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  background: #fff;
+  line-height: 2rem;
+  padding-right: 1rem;
+  color: #adadad;
+}
+.help-details .details-sec p:nth-child(3) {
+  padding-top: 0.5rem;
+}
+.help-details .details-sec p span {
+  float: right;
+}
+.help-details .details-sec p span b {
+  font-weight: normal;
+}
+.help-details .details-sec p:nth-child(5) {
+  color: #ff8838;
+}
+.help-details .details-foot {
+  width: 100%;
+  height: 4.2rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 1rem;
+}
+.help-details .details-foot ul {
+  width: 12.4rem;
+  height: 4.2rem;
+  background: 0;
+}
+.help-details .details-foot ul li {
+  line-height: 1.3rem;
+}
+.help-details .details-foot ul li:nth-child(1) {
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+}
+.help-details .details-foot ul li:nth-child(2) {
+  font-size: 0.8rem;
+  color: #666666;
+}
+.help-details .details-foot ul li:nth-child(3) {
+  font-size: 0.8rem;
+  color: #666666;
+}
+.help-details .details-foot ul li:nth-child(3) span {
+  color: #ff7d1b;
+}
+.help-details .details-foot .details-foot-img {
+  -webkit-box-flex: 1;
+  line-height: 4.2rem;
+}
+.help-details .details-foot .details-foot-img img {
+  width: auto;
+  height: 2.5rem;
+  background: 0;
+  vertical-align: middle;
+  margin-left: 0.7rem;
+}

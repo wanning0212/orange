@@ -82,6 +82,7 @@ body {
 }
 .details section .banner .state {
   position: absolute;
+  z-index: 111;
   right: 1rem;
   top: 1rem;
   width: 8.7rem;
@@ -96,20 +97,6 @@ body {
 .details section .banner .state a {
   color: #e8e8e8;
 }
-.details section .banner .btn {
-  position: absolute;
-  left: 40%;
-  bottom: 2rem;
-  text-align: center;
-}
-.details section .banner .btn li {
-  width: 1rem;
-  height: 1rem;
-  background: #cfcdcd;
-  border-radius: 0.5rem;
-  float: left;
-  margin-left: 1rem;
-}
 .details section .banner .btn .btnColor {
   background: #FFFFFF;
 }
@@ -117,6 +104,10 @@ body {
   position: absolute;
   right: 1rem;
   bottom: 0.8rem;
+  z-index: 111;
+}
+.swiper-pagination span{
+  background: white;
 }
 .details section .banner .comment a img {
   width: 1.8rem;

@@ -1,0 +1,317 @@
+@import url(../reset.css);
+html,
+body,
+.myind-details-warp {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+}
+.myind-details-warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.myind-details-warp header {
+  width: 100%;
+  height: 3.6rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.6rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea;
+}
+.myind-details-warp header .myind-details-left {
+  display: block;
+  width: 1rem;
+  height: 3.6rem;
+  background: none;
+}
+.myind-details-warp header .myind-details-left > img {
+  width: 1rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.myind-details-warp header .myind-details-title {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+.myind-details-warp header .myind-details-right {
+  display: block;
+  width: 1.6rem;
+  height: 3.6rem;
+  background: none;
+}
+.myind-details-warp header .myind-details-right > img {
+  width: 1.6rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.myind-details-warp section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: auto;
+}
+.myind-details-warp section::-webkit-scrollbar {
+  width: 0;
+}
+.myind-details-warp section .myind-details-info {
+  width: 100%;
+  height: 8.2rem;
+  background: #ffffff;
+  padding-left: 1rem;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+  font-size: 9px;
+  margin-bottom: 0.4rem;
+}
+.myind-details-warp section .myind-details-info p {
+  line-height: 1.3rem;
+}
+.myind-details-warp section .myind-details-info p b {
+  font-weight: normal;
+}
+.myind-details-warp section .myind-details-info p i {
+  font-style: normal;
+}
+.myind-details-warp section .myind-details-info p:nth-child(2) b {
+  color: #fe7e19;
+}
+.myind-details-warp section .myind-details-info p:nth-child(3) b {
+  margin-right: 1rem;
+}
+.myind-details-warp section .myind-details-info p:nth-child(4) b {
+  margin-right: 1.6rem;
+}
+.myind-details-warp section .myind-details-info p:nth-child(5) b {
+  margin-right: 0.5rem;
+}
+.myind-details-warp section .myind-details-cart {
+  width: 100%;
+  height: 2.4rem;
+  background: #ffffff;
+  line-height: 2.4rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #595959;
+  margin-bottom: 2px;
+}
+.myind-details-warp section .myind-details-goods {
+  width: 100%;
+  height: 7.6rem;
+  background: #ffffff;
+  padding: 0.5rem 1rem 0.6rem 0.8rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f9f9f9;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.myind-details-warp section .myind-details-goods .goodspic-details {
+  width: 6.4rem;
+  height: 6.4rem;
+  background: none;
+}
+.myind-details-warp section .myind-details-goods .goodspic-details > img {
+  width: 6.4rem;
+  height: auto;
+  background: none;
+}
+.myind-details-warp section .myind-details-goods .goodsinfo-details {
+  -webkit-box-flex: 1;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+.myind-details-warp section .myind-details-goods .goodsinfo-details .goods-titles {
+  color: #474747;
+}
+.myind-details-warp section .myind-details-goods .goodsinfo-details .goods-titles > h3 {
+  height: 2.4rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+}
+.myind-details-warp section .myind-details-goods .goodsinfo-details .goodsinfo-details-ybn {
+  clear: both;
+  margin-top: 0.4rem;
+  min-height: 4.2rem;
+}
+.myind-details-warp section .myind-details-goods .goodsinfo-details .goodsinfo-details-ybn .goodsinfo-details-left {
+  float: left;
+  color: #9a9a9a;
+}
+.myind-details-warp section .myind-details-goods .goodsinfo-details .goodsinfo-details-ybn .goodsinfo-details-left > p {
+  line-height: 1.4rem;
+  font-size: 9px;
+}
+.myind-details-warp section .myind-details-goods .goodsinfo-details .goodsinfo-details-ybn .goodsinfo-details-left > p > span {
+  margin-right: 0.6rem;
+}
+.myind-details-warp section .myind-details-goods .goodsinfo-details .goodsinfo-details-ybn .goodsinfo-details-right {
+  float: right;
+  color: #585858;
+  font-size: 9px;
+}
+.myind-details-warp section .myind-details-goods .goodsinfo-details .goodsinfo-details-ybn .goodsinfo-details-right i {
+  font-style: normal;
+}
+.myind-details-warp section .myind-details-total {
+  width: 100%;
+  height: 2.4rem;
+  background: #ffffff;
+  border-bottom: 1px solid #f9f9f9;
+  text-align: right;
+  line-height: 2.4rem;
+  color: #656565;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.myind-details-warp section .myind-details-total > span i {
+  font-style: normal;
+}
+.myind-details-warp section .myind-details-total > span:last-child {
+  margin-left: 0.9rem;
+}
+.myind-details-warp section .myind-details-total > span:last-child > b {
+  color: #ff822c;
+  font-size: 9px;
+}
+.myind-details-warp section .myind-details-express {
+  width: 100%;
+  height: 2.4rem;
+  background: #ffffff;
+  border-bottom: 1px solid #f9f9f9;
+  text-align: right;
+  line-height: 2.4rem;
+  color: #777777;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.myind-details-warp section .myind-details-express > span:last-child {
+  margin-left: 1rem;
+}
+.myind-details-warp section .myind-details-express > span:last-child > b {
+  color: #ff822c;
+  font-size: 9px;
+  font-weight: normal;
+}
+.myind-details-warp section .myind-details-progress {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.myind-details-warp section .myind-details-progress .progress-plan {
+  width: 100%;
+  height: 2.4rem;
+  background: #ffffff;
+  line-height: 2.4rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #626262;
+  border-bottom: 1px solid #fafafa;
+}
+.myind-details-warp section .myind-details-progress .progress-detail {
+  color: #9a9a9a;
+  padding: 0.6rem 1.6rem 0.6rem 1rem;
+}
+.myind-details-warp section .myind-details-progress .progress-detail > p {
+  line-height: 1.4rem;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.myind-details-warp section .myind-details-progress .progress-detail > p > span:last-child {
+  position: absolute;
+  top: 0;
+  left: 4.8rem;
+}
+.myind-details-warp section .myind-details-progress .progress-detail > p .feedback-type {
+  color: #fe8a34;
+}
+.myind-details-warp section .myind-details-progress .progress-detail > p i {
+  font-style: normal;
+  margin-right: 0.8rem;
+}
+.myind-details-warp section .myind-details-progress .progress-detail .refused-resons-pic {
+  padding-left: 4.6rem;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+}
+.myind-details-warp section .myind-details-progress .progress-detail .refused-resons-pic img {
+  width: 4.2rem;
+  height: auto;
+  background: none;
+}
+.myind-details-warp section .myind-details-progress .progress-detail .progress-reason {
+  height: 2.8rem;
+}
+.myind-details-warp section .myind-details-progress .progress-remind {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 2.4rem;
+  background: #ffffff;
+  border-bottom: 1px solid #f9f9f9;
+  text-align: right;
+  line-height: 2.4rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.myind-details-warp section .myind-details-progress .progress-remind .remindpic {
+  display: inline-block;
+  width: 1.2rem;
+  height: 2.4rem;
+  background: none;
+}
+.myind-details-warp section .myind-details-progress .progress-remind .remindpic > img {
+  width: 1.2rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+.myind-details-warp section .myind-details-progress .progress-remind .remindtxt {
+  -webkit-box-flex: 1;
+  text-align: left;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+}
+.myind-details-warp section .myind-details-progress .progress-remind .remindtxt > span {
+  color: #fe8d41;
+}
+.myind-details-warp section .progress-btn {
+  width: 100%;
+  height: 2.6rem;
+  background: #ffffff;
+  border-bottom: 1px solid #f9f9f9;
+  text-align: right;
+  line-height: 2.4rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+.myind-details-warp section .progress-btn > button {
+  border: 1px solid #fec79c;
+  outline: none;
+  width: 5rem;
+  height: 1.6rem;
+  background: none;
+  border-radius: 0.4rem;
+  color: #ff8b3e;
+  text-align: center;
+}
+.myind-details-warp section .progress-btn .confirm-deliver-goods {
+  width: 8rem;
+  height: 1.6rem;
+  background: none;
+}
+.myind-details-warp section .progress-btn .grey-btn {
+  color: #333;
+  border-color: #333;
+}

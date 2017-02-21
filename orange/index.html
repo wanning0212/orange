@@ -5,10 +5,13 @@
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>优橙设计师移动工作平台</title>
 		<link rel="stylesheet" type="text/css" href="css/home/home.css" />
+		<link rel="stylesheet" href="css/swiper.css">
 		<script type="text/javascript" src="js/auto.js"></script>
 		<script src="js/angular-1.4.6.js"></script>
 		<script src="js/angular-ui-router.js"></script>
 		<script src="js/iscroll2.js"></script>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/swiper.jquery.js"></script>
 	</head>
 	<body ui-view="body" ng-controller="myBody">
 		<div class="warp">
@@ -24,7 +27,7 @@
 								<div class="left">
 									<dl>
 										<dt><img src="images/home/head.png"/></dt>
-										<dd>Lilili</dd>
+										<dd>{{username}}</dd>
 									</dl>
 								</div>
 								<ul class="center">
@@ -32,7 +35,7 @@
 									<li>店铺状态：<span>停业</span></li>
 								</ul>
 								<div class="right">
-									<a ui-sref="login" href=""><img src="images/home/rig.png" /></a>
+									<a ui-sref="first" href=""><img src="images/home/rig.png" /></a>
 								</div>
 							</div>
 							<div class="main1">

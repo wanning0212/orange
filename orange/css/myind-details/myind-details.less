@@ -1,0 +1,291 @@
+@import url(../reset.css);
+.whb(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir; //horizontal
+}
+html,
+body,
+.myind-details-warp {
+    .whb(100%,100%,#f2f2f2);
+}
+.myind-details-warp {
+    .box;
+    header {
+        .whb(100%,3.6rem,#f7f7f7);
+        .box(horizontal);
+        line-height: 3.6rem;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid #eaeaea;
+        .myind-details-left {
+            display: block;
+            .whb(1rem,3.6rem,none);
+            &>img {
+                .whb(1rem,auto,none);
+                vertical-align: middle;
+            }
+        }
+        .myind-details-title {
+            -webkit-box-flex: 1;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .myind-details-right {
+            display: block;
+            .whb(1.6rem,3.6rem,none);
+            &>img {
+                .whb(1.6rem,auto,none);
+                vertical-align: middle;
+            }
+        }
+    }
+    section {
+        -webkit-box-flex: 1;
+        .box;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        .myind-details-info {
+            .whb(100%,8.2rem,#fff);
+            padding-left: 1rem;
+            padding-top: 0.4rem;
+            box-sizing: border-box;
+            font-size: 9px;
+            margin-bottom: 0.4rem;
+            p {
+                line-height: 1.3rem;
+                b {
+                    font-weight: normal;
+                }
+                i {
+                    font-style: normal;
+                }
+            }
+            p:nth-child(2) {
+                b {
+                    color: #fe7e19;
+                }
+            }
+            p:nth-child(3) {
+                b {
+                    margin-right: 1rem;
+                }
+            }
+            p:nth-child(4) {
+                b {
+                    margin-right: 1.6rem;
+                }
+            }
+            p:nth-child(5) {
+                b {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+        .myind-details-cart {
+            .whb(100%,2.4rem,#fff);
+            line-height: 2.4rem;
+            padding-left: 1rem;
+            box-sizing: border-box;
+            font-size: 12px;
+            color: #595959;
+            margin-bottom: 2px;
+        }
+        .myind-details-goods {
+            .whb(100%,7.6rem,#fff);
+            padding: 0.5rem 1rem 0.6rem 0.8rem;
+            box-sizing: border-box;
+            border-bottom: 1px solid #f9f9f9;
+            .box(horizontal);
+            .goodspic-details {
+                .whb(6.4rem,6.4rem,none);
+                &>img {
+                    .whb(6.4rem,auto,none);
+                }
+            }
+            .goodsinfo-details {
+                -webkit-box-flex: 1;
+                padding-left: 1rem;
+                box-sizing: border-box;
+                .goods-titles {
+                    color: #474747;
+                    &>h3 {
+                        height: 2.4rem;
+                        line-height: 1.2rem;
+                        font-weight: bold; 
+                    }
+                }
+                .goodsinfo-details-ybn {
+                    clear: both;
+                    margin-top: 0.4rem;
+                    min-height: 4.2rem;
+                    .goodsinfo-details-left {
+                        float: left;
+                        color: #9a9a9a;
+                        &>p {
+                            line-height: 1.4rem;
+                            font-size: 9px;
+                            &>span {
+                                margin-right: 0.6rem;
+                            }
+                        }
+                    }
+                    .goodsinfo-details-right {
+                        float: right;
+                        color: #585858;
+                        font-size: 9px;
+                        i {
+                            font-style: normal;
+                        }
+                    }
+                }
+            }
+        }
+        //合计
+        .myind-details-total{
+            .whb(100%,2.4rem,#fff);
+            border-bottom: 1px solid #f9f9f9;
+            text-align: right;
+            line-height: 2.4rem;
+            color: #656565;
+            padding-right: 1rem;
+            box-sizing: border-box;
+            font-size: 12px;
+            &>span{
+                i{
+                    font-style: normal;
+                }
+            }
+            &>span:last-child{
+                margin-left: 0.9rem;
+                &>b{
+                    color: #ff822c;
+                    font-size: 9px;
+                }
+            }
+        }
+        //物流
+        .myind-details-express{
+            .whb(100%,2.4rem,#fff);
+            border-bottom: 1px solid #f9f9f9;
+            text-align: right;
+            line-height: 2.4rem;
+            color: #777777;
+            padding-right: 1rem;
+            box-sizing: border-box;
+            font-size: 12px;
+            &>span:last-child{
+                margin-left: 1rem;
+                &>b{
+                    color: #ff822c;
+                    font-size: 9px;
+                    font-weight: normal;
+                }
+            }
+        }
+        //申请进度
+        .myind-details-progress {
+            margin-top: 0.5rem;
+            .whb(100%,auto,#fff);
+            .progress-plan {
+                .whb(100%,2.4rem,#fff);
+                line-height: 2.4rem;
+                padding-left: 1rem;
+                box-sizing: border-box;
+                font-size: 12px;
+                color: #626262;
+                border-bottom: 1px solid #fafafa;
+            }
+            .progress-detail {
+                color: #9a9a9a;
+                padding: 0.6rem 1.6rem 0.6rem 1rem;
+                &>p {
+                    line-height: 1.4rem;
+                    position: relative;
+                    .box(horizontal);
+                    &>span:last-child {
+                        position: absolute;
+                        top: 0;
+                        left: 4.8rem;
+                    }
+                    .feedback-type{
+                        color: #fe8a34;
+                    }
+                    i {
+                        font-style: normal;
+                        margin-right: 0.8rem;
+                    }
+                }
+                .refused-resons-pic{
+                    padding-left: 4.6rem;
+                    padding-top: 0.4rem;
+                    box-sizing: border-box;
+                    img{
+                        .whb(4.2rem,auto,none);
+                    }
+                }
+                .progress-reason { 
+                    height: 2.8rem;
+                }
+            }
+            //提醒
+            .progress-remind {
+                .box(horizontal);
+                .whb(100%,2.4rem,#fff);
+                border-bottom: 1px solid #f9f9f9;
+                text-align: right;
+                line-height: 2.4rem;
+                padding: 0 1rem;
+                box-sizing: border-box;
+                .remindpic {
+                    display: inline-block;
+                    .whb(1.2rem,2.4rem,none);
+                    &>img {
+                        .whb(1.2rem,auto,none);
+                        vertical-align: middle;
+                    }
+                }
+                .remindtxt {
+                    -webkit-box-flex: 1;
+                    text-align: left;
+                    padding-left: 0.4rem;
+                    box-sizing: border-box;
+                    &>span{
+                        color: #fe8d41;
+                    }
+                }
+            }
+        }
+        //btn
+        .progress-btn {
+            .whb(100%,2.6rem,#fff);
+            border-bottom: 1px solid #f9f9f9;
+            text-align: right;
+            line-height: 2.4rem;
+            padding-right: 1rem;
+            box-sizing: border-box;
+            &>button {
+                border: 1px solid #fec79c;
+                outline: none;
+                .whb(5rem,1.6rem,none);
+                border-radius: 0.4rem;
+                color: #ff8b3e;
+                text-align: center;
+            }
+            .confirm-deliver-goods{
+                .whb(8rem,1.6rem,none);
+            }
+            .grey-btn{
+                color: #333;
+                border-color: #333;
+            }
+        }
+    }
+}

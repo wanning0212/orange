@@ -67,6 +67,17 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+        //验证登录
+        .state("first",{
+            url:"first",
+            views:{
+                "body":{
+                    templateUrl:"login_first.html",
+                    controller: "myBody"
+                }
+            }
+        })
+
         //我的店铺
         .state("myinf",{
             url:"myinf",
@@ -127,6 +138,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+        //粉色列表
         .state("fans",{
             url:"fans",
             views:{
@@ -136,6 +148,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+        //更多查询
         .state("select",{
             url:"select",
             views:{
@@ -163,6 +176,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+        //优酷钱包
         .state("money",{
             url:"money",
             views:{
@@ -172,6 +186,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+        // 提现
         .state("top-up",{
             url:"top-up",
             views:{
@@ -181,6 +196,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+        //提现
         .state("tixian",{
             url:"tixian",
             views:{
@@ -190,6 +206,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+
         .state("card",{
             url:"card",
             views:{
@@ -199,6 +216,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+
         .state("deposit",{
             url:"deposit",
             views:{
@@ -235,6 +253,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+        //上架商品
         .state("goods",{
             url:"goods",
             views:{
@@ -243,7 +262,15 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                     controller: "myBody"
                 }
             }
-        });
-    // $urlRouterProvider.otherwise("index");
+        })
+        .state("bank",{
+            url:"bank",
+            views:{
+                "body":{
+                    templateUrl:"bank.html",
+                    controller: "myBody"
+                }
+            }
+        })
 
 }]);

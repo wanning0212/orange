@@ -1,13 +1,18 @@
-/**
- * Created by Administrator on 2017/2/16.
- */
 app.controller("myBody",function ($scope,$state,$http,$location,$interval) {
+    if(!sessionStorage.length){
+        $state.go("login");
+    }else{
+        for(var key in sessionStorage){
+            $scope.username = key
+        }
+    }
     $scope.num=0;
     //信息
     $http.jsonp("http://localhost:3000/users/select?tables=massage&callback=JSON_CALLBACK").success(function (data) {
         $scope.infoData = data;
         $scope.num = data.length;
     });
+
     $scope.number = "";
     $scope.text  = "发送验证码";
     var timer;
@@ -23,21 +28,19 @@ app.controller("myBody",function ($scope,$state,$http,$location,$interval) {
                 $scope.text  = "发送验证码";
                 $interval.cancel(timer);
                 $http.jsonp("http://localhost:3000/test?callback=JSON_CALLBACK").success(function (data) {
-                    if(data.code == "1"){
-                        $scope.number = data.test;
+                    if(data.status == "1"){
+                        $scope.number = data.data;
                     }
                 })
             }
         },1000)
-    }
-
-
+    };
     //按钮后退
     $scope.back = function () {
         $scope.hash = $location.path().substr(1);
         console.log($scope.hash);
         if($scope.hash == "info"||$scope.hash == ""){
-            $scope.hash == "index";
+            $scope.hash = "index";
         }
         $state.go("info");
     };
@@ -74,12 +77,16 @@ app.controller("myBody",function ($scope,$state,$http,$location,$interval) {
     };
     //登录
     $scope.login = function () {
+        if(sessionStorage.length){
+            $state.go("index");
+        }
         if($scope.tel != undefined)
             $http.jsonp("http://localhost:3000/users/find?callback=JSON_CALLBACK&tel="+$scope.tel).success(function (data) {
                 if(data){
                     if(data[0].pwd != $scope.pwd){
                         console.log("用户密码错误");
                     }else{
+                        sessionStorage.setItem(data[0].users,$scope.pwd);
                         $state.go("index");
                     }
                 }else {
@@ -129,6 +136,7 @@ app.controller("myCom",function ($scope,$state,$http) {
 app.controller("myfans",function ($scope,$state,$http) {
     $http.jsonp("http://localhost:3000/users/select?tables=fans&callback=JSON_CALLBACK").success(function (data) {
         $scope.fans = data;
+        $scope.fansLeg = data.length;
     });
 });
 //更多查询
