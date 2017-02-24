@@ -1,16 +1,10 @@
 app.controller("myBody",function ($scope,$state,$http,$location,$interval) {
-    if(!sessionStorage.length){
-        $state.go("login");
-    }else{
-        for(var key in sessionStorage){
-            $scope.username = key
-        }
-    }
+    
     $scope.num=0;
     //信息
-    $http.jsonp("http://localhost:3000/users/select?tables=massage&callback=JSON_CALLBACK").success(function (data) {
-        $scope.infoData = data;
-        $scope.num = data.length;
+    $http.jsonp("http://www.luckykai.com/orange/?operate=select&table=massage&callback=JSON_CALLBACK").success(function (data) {
+        $scope.infoData = data.data;
+        $scope.num = data.data.length;
     });
 
     $scope.number = "";
@@ -27,8 +21,8 @@ app.controller("myBody",function ($scope,$state,$http,$location,$interval) {
                 $scope.all = false;
                 $scope.text  = "发送验证码";
                 $interval.cancel(timer);
-                $http.jsonp("http://localhost:3000/test?callback=JSON_CALLBACK").success(function (data) {
-                    if(data.status == "1"){
+                $http.jsonp("http://www.luckykai.com/orange/index.php/Home/index/test?callback=JSON_CALLBACK").success(function (data) {
+                    if(data.data.code == "1"){
                         $scope.number = data.data;
                     }
                 })
@@ -56,16 +50,16 @@ app.controller("myBody",function ($scope,$state,$http,$location,$interval) {
     $scope.register = function () {
         if (!$scope.users && !$scope.pwd && $scope.tel) {
             $http({
-                url: "http://localhost:3000/users/add/?callback=JSON_CALLBACK",
+                url: "http://www.luckykai.com/orange/?operate=add&callback=JSON_CALLBACK",
                 method: "jsonp",
                 params: {
                     "users": $scope.users,
                     "pwd": $scope.pwd,
                     "tel": $scope.tel,
-                    "tables": "user"
+                    "table": "user"
                 }
             }).success(function (data) {
-                if (data.code == "1") {
+                if (data.data.code == "1") {
                     $state.go("login");
                 }
             }).error(function (data) {
@@ -75,18 +69,24 @@ app.controller("myBody",function ($scope,$state,$http,$location,$interval) {
             console.log("不能为空")
         }
     };
+
+    //获取sessionStorage 存储
+    for(var key in sessionStorage){
+        $scope.username = key;
+        $scope.mypwd = sessionStorage[key]
+    }
     //登录
     $scope.login = function () {
         if(sessionStorage.length){
             $state.go("index");
         }
         if($scope.tel != undefined)
-            $http.jsonp("http://localhost:3000/users/find?callback=JSON_CALLBACK&tel="+$scope.tel).success(function (data) {
+            $http.jsonp("http://www.luckykai.com/orange/?operate=find&table=user&callback=JSON_CALLBACK&tel="+$scope.tel).success(function (data) {
                 if(data){
-                    if(data[0].pwd != $scope.pwd){
+                    if(data.data[0].pwd != $scope.pwd){
                         console.log("用户密码错误");
                     }else{
-                        sessionStorage.setItem(data[0].users,$scope.pwd);
+                        sessionStorage.setItem(data.data[0].users,$scope.pwd);
                         $state.go("index");
                     }
                 }else {
@@ -98,11 +98,13 @@ app.controller("myBody",function ($scope,$state,$http,$location,$interval) {
     $scope.updatePwd = function () {
         if($scope.pwd == $scope.pwds){
             $http({
-                url: "http://localhost:3000/users/updates?callback=JSON_CALLBACK",
+                url: "http://www.luckykai.com/orange/?callback=JSON_CALLBACK",
                 method:"jsonp",
                 params:{
                     "pwd": $scope.pwd,
-                    "tel": $scope.tel
+                    "tel": $scope.tel,
+                    "operate":"update",
+                    "table":"user"
                 }
             }).success(function (info) {
                 if(info.code){
@@ -115,33 +117,41 @@ app.controller("myBody",function ($scope,$state,$http,$location,$interval) {
             console.log("二次密码不统一");
         }
 
+    };
+
+    //退出
+    $scope.quit = function () {
+        sessionStorage.removeItem($scope.username);
+        $state.go("login");
     }
+
+
 });
 
 // 渲染页面
 
 //订单状态
 app.controller("myind",function ($scope,$state,$http) {
-    $http.jsonp("http://localhost:3000/users/select?tables=myind&callback=JSON_CALLBACK").success(function (data) {
-        $scope.ind = data;
+    $http.jsonp("http://www.luckykai.com/orange/?operate=select&table=myind&callback=JSON_CALLBACK").success(function (data) {
+        $scope.ind = data.data;
     });
 });
 //评论管理
 app.controller("myCom",function ($scope,$state,$http) {
-    $http.jsonp("http://localhost:3000/users/select?tables=comment&callback=JSON_CALLBACK").success(function (data) {
-        $scope.comment = data;
+    $http.jsonp("http://www.luckykai.com/orange/?operate=select&table=comment&callback=JSON_CALLBACK").success(function (data) {
+        $scope.comment = data.data;
     });
 });
 //粉丝
 app.controller("myfans",function ($scope,$state,$http) {
-    $http.jsonp("http://localhost:3000/users/select?tables=fans&callback=JSON_CALLBACK").success(function (data) {
-        $scope.fans = data;
-        $scope.fansLeg = data.length;
+    $http.jsonp("http://www.luckykai.com/orange/?operate=select&table=fans&callback=JSON_CALLBACK").success(function (data) {
+        $scope.fans = data.data;
+        $scope.fansLeg = data.data.length;
     });
 });
 //更多查询
 app.controller("myselect",function ($scope,$state,$http) {
-    $http.jsonp("http://localhost:3000/users/select?tables=record&callback=JSON_CALLBACK").success(function (data) {
-        $scope.select = data;
+    $http.jsonp("http://www.luckykai.com/orange/?operate=select&table=record&callback=JSON_CALLBACK").success(function (data) {
+        $scope.select = data.data;
     });
 });

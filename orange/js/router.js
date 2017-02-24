@@ -29,10 +29,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
             views:{
                 "body":{
                     templateUrl:"index.html",
-                    constroller:"myBody",
-                    params:{
-                        "name": "user"
-                    }
+                    constroller:"myBody"
                 }
             }
         })
@@ -73,7 +70,15 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
             views:{
                 "body":{
                     templateUrl:"login_first.html",
-                    controller: "myBody"
+                    controller: function ($scope,$state) {
+                        if(!sessionStorage.length){
+                            $state.go("login");
+                        }else{
+                            for(var key in sessionStorage){
+                                $scope.username = key
+                            }
+                        }
+                    }
                 }
             }
         })
@@ -263,6 +268,7 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
+        //我的作品库
         .state("bank",{
             url:"bank",
             views:{
@@ -272,5 +278,14 @@ app.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlR
                 }
             }
         })
-
+        //更多操作
+        .state("more",{
+            url:"more",
+            views:{
+                "body":{
+                    templateUrl:"more.html",
+                    controller: "myBody"
+                }
+            }
+        });
 }]);

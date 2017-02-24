@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/help/help.css" />
     <link rel="stylesheet" type="text/css" href="css/caiwu/money.css"/>
 </head>
+<style>
+    .addColor{
+        color: red;
+    }
+</style>
 <body>
 <div class="two">
     <header>
@@ -27,19 +32,9 @@
                 <li><a href="#" class="money_img" ui-sref="top-up"><img src="images/caiwu/myqianbao/chong.png"/></a><a href="#" ui-sref="deposit"><img src="images/caiwu/myqianbao/ti.png"/></a></li>
             </ul>
         </div>
-        <div class="select_data">
-            <dl class="select_fl">
-                <dt>销售管理:<span class="clo2">-230.00元</span></dt>
-                <dd>交易记录:<span>2016-06-16</span></dd>
-            </dl>
-            <dl class="select_fr">
-                <dt>订单编号:DKFAOD000000011</dt>
-                <dd>已完成</dd>
-            </dl>
-        </div>
         <div class="select_data" ng-repeat="x in select">
             <dl class="select_fl">
-                <dt>销售管理:<span class="clo">{{x.record_amount}}元</span></dt>
+                <dt>{{x.record_type}}:<span  ng-class="{addColor:x.record_amount<0,clo:x.record_amount>=0}">{{x.record_amount}}元</span></dt>
                 <dd>交易记录:<span>{{x.colock}}</span></dd>
             </dl>
             <dl class="select_fr">
